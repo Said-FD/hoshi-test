@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+  min-width: 320px;
+  max-width: 1440px;
+  min-height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: 'Open Sans', -apple-system, 'Helvetica Neue', 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.375;
+  color: var(--mainTextColor, #333);
+  background-color: var(--mainBgColor, #fff);
+}
+
+@media (min-width: 1280px) {
+  .body {
+    padding: 50px 100px 95px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .body {
+    padding: 30px 24px 52px;
+  }
+}
+
+a {
+  color: var(--mainTextColor);
+  transition: color .15s;
+}
+
+a:hover,
+a:focus {
+  color: var(--secondaryTextColor);
+}
+
+a svg {
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
+button {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.secondary-text {
+  color: var(--secondaryTextColor);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.action-button {
+  min-width: 172px;
+  padding: 10px 35px;
+  text-align: center;
+  font-weight: 600;
+  background-color: var(--accentColor);
+  border-radius: var(--buttonBorderRadius);
+  transition: background-color .15s;
+}
+
+.action-button:hover,
+.action-button:focus,
+.action-button:active {
+  color: var(--mainTextColor);
+  background-color: var(--accentColorHover);
+}
+
+.action-button.action-button-dark {
+  color: var(--inverseTextColor);
+  background-color: var(--secondaryBgColor);
+}
+
+.action-button.action-button-dark:hover,
+.action-button.action-button-dark:focus,
+.action-button.action-button-dark:active {
+  color: var(--inverseTextColor);
+  background-color: var(--secondaryBgColorHover);
+}
+
+@media (min-width: 600px) {
+  .is-desktop-hidden {
+    display: none !important;
+  }
+}
+
+@media (max-width: 599px) {
+  .is-mobile-hidden {
+    display: none !important;
+  }
+
+  .mobile-menu-close-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+  }
+
+  .mobile-menu-close-button svg {
+    pointer-events: none;
+    flex-shrink: 0;
+  }
+}
+/* END Global Styles */
