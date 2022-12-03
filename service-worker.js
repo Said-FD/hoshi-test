@@ -1,5 +1,5 @@
 // TODO: Update version
-const cacheName = 'cache-v14'
+const cacheName = 'cache-v15'
 
 const staticAssets = [
   '/',
