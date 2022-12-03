@@ -1,7 +1,3 @@
-const coordinates = {
-  lat: 25.832869789958405,
-  lng: -80.12098454227022,
-}
 const styles = [
   {
     "elementType": "geometry",
@@ -218,18 +214,44 @@ const styles = [
   }
 ]
 
-const options = {
+const coordinatesAsian = {
+  lat: 25.832869789958405,
+  lng: -80.12098454227022,
+}
+
+const optionsAsian = {
   zoom: 15,
-  center: coordinates,
+  center: coordinatesAsian,
   styles: styles,
 }
 
-function initMap() {
-  const map = new google.maps.Map(document.getElementById('map'), options)
+function initMapAsian() {
+  const map = new google.maps.Map(document.getElementById('mapAsian'), optionsAsian)
 
   new google.maps.Marker({
-    position: coordinates,
+    position: coordinatesAsian,
     map: map,
-    title: 'Hoshi. Sushi & Asian Cousine',
+    title: 'Hoshi & Sushi. Asian Cuisine',
+  })
+}
+
+const coordinatesThai = {
+  lat: 26.01077418439804,
+  lng: -80.14636881136748,
+}
+
+const optionsThai = {
+  zoom: 15,
+  center: coordinatesThai,
+  styles: styles,
+}
+
+function initMapThai() {
+  const map = new google.maps.Map(document.getElementById('mapThai'), optionsThai)
+
+  new google.maps.Marker({
+    position: coordinatesThai,
+    map: map,
+    title: 'Hoshi & Sushi. Thai Cuisine',
   })
 }

@@ -55,6 +55,35 @@ button {
   font-weight: 600;
 }
 
+.cuisine-link {
+  display: flex;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+@media (min-width: 1280px) {
+  .cuisine-link {
+    position: relative;
+    top: -25px;
+    right: -72px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .cuisine-link {
+    margin-bottom: 30px;
+  }
+}
+
+.cuisine-link .link-uppercase {
+  margin-left: .375rem;
+  text-transform: uppercase;
+}
+
+.cuisine-link svg {
+  margin-left: 16px;
+}
+
 .action-button {
   min-width: 172px;
   padding: 10px 35px;

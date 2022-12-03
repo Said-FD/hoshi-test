@@ -1,17 +1,23 @@
-const cacheName = 'cache-v13'
+// TODO: Update version
+const cacheName = 'cache-v14'
 
 const staticAssets = [
   '/',
   '/index.html',
-  '/styles/base/global.css',
+  '/asian-cuisine.html',
+  '/thai-cuisine.html',
   '/styles/base/reset.css',
   '/styles/base/variables.css',
+  '/styles/base/global.css',
   '/styles/components/header.css',
   '/styles/components/main.css',
   '/styles/components/navigation.css',
   '/styles/components/dishes.css',
   '/styles/components/footer.css',
+  '/styles/index.css',
+  '/styles/style.css',
   '/scripts/app.js',
+  '/scripts/map.js',
   '/favicon.svg',
   '/favicon/favicon-180.png',
   '/favicon/favicon-192.png',
