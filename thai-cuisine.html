@@ -36,7 +36,7 @@
       </a>
 
       <a class="link header-link" href="#mapThai">
-        <span>1935 Harrison st, Hollywood, FL</span>
+        <span>1935 Harrison St, Hollywood, FL</span>
         <svg width="24" height="24" aria-hidden="true">
           <use href="#icon-pin_marker"></use>
         </svg>
@@ -306,6 +306,24 @@
         <li class="dish">
           <p class="dish-name">Tom Yum</p>
           <p class="dish-description">Spicy chili paste / mushrooms / scallions / cilantro with aroma of red onion / lime - leaf / galanga / lemongrass in spicy and sour clear broth</p>
+          <div class="multi-price-rows">
+            <p>
+              Chicken
+              <span class="dish-price">$7.00</span>
+            </p>
+            <p>
+              Tofu
+              <span class="dish-price">$7.00</span>
+            </p>
+            <p>
+              Shrimp / Fish / Seafood
+              <span class="dish-price">$9.00</span>
+            </p>
+          </div>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Tom Kha</p>
+          <p class="dish-description">Creamy coconut milk soup / mushrooms / scallions / cilantro with aroma of red onion / lime leaves / galanga / lemongrass and dashed with chili oil</p>
           <div class="multi-price-rows">
             <p>
               Chicken
@@ -1140,7 +1158,7 @@
 
         <!-- Saute -->
         <li class="dish">
-          <p class="dish-name">Ginger Sauce</p>
+          <p class="dish-name">Ginger Saute</p>
           <p class="dish-description">Sauteed fresh ginger / onions / scallions / bell peppers / back fungus mushrooms and carrots</p>
           <p class="dish-description">* Served with white rice</p>
           <div class="multi-price-rows">
@@ -1171,7 +1189,7 @@
           </div>
         </li>
         <li class="dish">
-          <p class="dish-name">Garlic and Pepper Sauce</p>
+          <p class="dish-name">Garlic and Pepper Saute</p>
           <p class="dish-description">Sauteed garlic / black pepper / white wine in Thai seasoning over steamed vegetables</p>
           <p class="dish-description">* Served with white rice</p>
           <div class="multi-price-rows">
@@ -1233,7 +1251,7 @@
           </div>
         </li>
         <li class="dish">
-          <p class="dish-name">Brown Sauce</p>
+          <p class="dish-name">Brown Saute</p>
           <p class="dish-description">Sauteed mixed vegetables in light brown sauce</p>
           <p class="dish-description">* Mild, Medium or Hot</p>
           <p class="dish-description">* Served with white rice</p>
@@ -1264,41 +1282,62 @@
             </p>
           </div>
         </li>
-        <!-- TODO: How it should look -->
         <li class="dish">
           <p class="dish-name">Cashew Nuts</p>
+          <span class="dish-price">$19.95</span>
           <p class="dish-description">Sauteed cashew nuts, onions, mushrooms, carrots, bell peppers and scallions</p>
           <p class="dish-description">* Served with white rice</p>
-          <div class="multi-price-rows">
-            <p>
-              Chicken
-              <span class="dish-price">$16.95</span>
-            </p>
-            <p>
-              Pork
-              <span class="dish-price">$16.95</span>
-            </p>
-            <p>
-              Veggies
-              <span class="dish-price">$16.95</span>
-            </p>
-            <p>
-              Tofu
-              <span class="dish-price">$16.95</span>
-            </p>
-            <p>
-              Beef
-              <span class="dish-price">$19.95</span>
-            </p>
-            <p>
-              Shrimp
-              <span class="dish-price">$19.95</span>
-            </p>
-          </div>
+        </li>
+
+        <!-- Side order -->
+        <li class="dish">
+          <p class="dish-name">Rice: Brown / White / Sticky</p>
+          <span class="dish-price">$3.50</span>
+          <p class="dish-description"></p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Steamed Clear Noodles</p>
+          <span class="dish-price">$4.00</span>
+          <p class="dish-description"></p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Steamed Vegetables</p>
+          <span class="dish-price">$4.00</span>
+          <p class="dish-description"></p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Steam Rice Noodles</p>
+          <span class="dish-price">$4.00</span>
+          <p class="dish-description"></p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Fried Egg</p>
+          <span class="dish-price">$2.00</span>
+          <p class="dish-description"></p>
+        </li>
+
+        <!-- Extra items -->
+        <li class="dish">
+          <p class="dish-name">Vegetables</p>
+          <span class="dish-price">$4.00</span>
+          <p class="dish-description"></p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Chicken/Fried Tofu/Pork</p>
+          <span class="dish-price">$4.00</span>
+          <p class="dish-description"></p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Shrimp/Beef</p>
+          <span class="dish-price">$5.00</span>
+          <p class="dish-description"></p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Cashew Nuts</p>
+          <span class="dish-price">$3.50</span>
+          <p class="dish-description"></p>
         </li>
       </ul>
-
-      <!-- TODO: Pan seared Salmon with your choice of -->
 
       <ul class="dishes-list signature-kitchen is-mobile-hidden">
         <li class="dish-category is-desktop-hidden">
@@ -1322,9 +1361,14 @@
           <span class="dish-price">$22.95</span>
           <p class="dish-description">Sauteed squid / shrimp / mussels / bell peppers / jalapeños / scallions / onions / basil leaves in chili paste sause</p>
         </li>
-
-        <!-- TODO: Add Pan seared Salmon with your choice of here -->
-
+        <li class="dish">
+          <p class="dish-name">Pan seared Salmon</p>
+          <span class="dish-price">$19.95</span>
+          <p class="dish-description">* With your choice of:</p>
+          <p class="dish-description">- Red curry sauce: bamboo shoots, bell peppers, and basil leaves</p>
+          <p class="dish-description">- Basil sauce: sautéed fresh basil leaves, fresh garlic, onions, snow peas and bell peppers</p>
+          <p class="dish-description">- Chili sauce: steamed mixed vegetables served with chili sauce</p>
+        </li>
         <li class="dish">
           <p class="dish-name">Pad Eggplant</p>
           <span class="dish-price">$18.95</span>
@@ -1334,6 +1378,55 @@
           <p class="dish-name">Kana Moo Krob</p>
           <span class="dish-price">$18.95</span>
           <p class="dish-description">Stir fried crispy pork belly / chinese broccoli with white bean paste sauce</p>
+        </li>
+
+        <!-- Side order -->
+        <li class="dish">
+          <p class="dish-name">Rice: Brown / White / Sticky</p>
+          <span class="dish-price">$3.50</span>
+          <p class="dish-description"></p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Steamed Clear Noodles</p>
+          <span class="dish-price">$4.00</span>
+          <p class="dish-description"></p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Steamed Vegetables</p>
+          <span class="dish-price">$4.00</span>
+          <p class="dish-description"></p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Steam Rice Noodles</p>
+          <span class="dish-price">$4.00</span>
+          <p class="dish-description"></p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Fried Egg</p>
+          <span class="dish-price">$2.00</span>
+          <p class="dish-description"></p>
+        </li>
+        
+        <!-- Extra items -->
+        <li class="dish">
+          <p class="dish-name">Vegetables</p>
+          <span class="dish-price">$4.00</span>
+          <p class="dish-description"></p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Chicken/Fried Tofu/Pork</p>
+          <span class="dish-price">$4.00</span>
+          <p class="dish-description"></p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Shrimp/Beef</p>
+          <span class="dish-price">$5.00</span>
+          <p class="dish-description"></p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Cashew Nuts</p>
+          <span class="dish-price">$3.50</span>
+          <p class="dish-description"></p>
         </li>
       </ul>
 
@@ -1406,7 +1499,7 @@
           <use href="#icon-pin_marker"></use>
         </svg>
         <p class="footer-subtitle">Address</p>
-        <p class="grid-item-spanned">1935 Harrison st, Hollywood, FL 33020</p>
+        <p class="grid-item-spanned">1935 Harrison St, Hollywood, FL 33020</p>
       </div>
 
       <div class="footer-grid-item footer-hours">

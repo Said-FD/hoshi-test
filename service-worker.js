@@ -1,5 +1,4 @@
-// TODO: 14
-const cacheName = 'cache-v20'
+const cacheName = 'cache-v14'
 
 const staticAssets = [
   '/',
