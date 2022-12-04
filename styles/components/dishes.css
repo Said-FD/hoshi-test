@@ -1,0 +1,142 @@
+/* Dishes Styles */
+.dishes-list {
+  display: none;
+  row-gap: 24px;
+}
+
+.dishes-list.is-active {
+  display: grid;
+}
+
+@media (min-width: 1100px) {
+  .dishes-list {
+    column-gap: 60px;
+  }
+}
+
+@media (min-width: 860px) and (max-width: 1099px) {
+  .dishes-list {
+    column-gap: 45px;
+  }
+}
+
+@media (min-width: 860px) {
+  .dishes-list {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+@media (min-width: 600px) and (max-width: 859px) {
+  .dishes-list {
+    grid-template-columns: minmax(220px, 320px);
+  }
+}
+
+@media (max-width: 599px) {
+  .dishes-container {
+    position: relative;
+  }
+
+  .dishes-list {
+    display: none;
+  }
+
+  .dish-category {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .dish-category > span {
+    margin-left: 16px;
+    padding-right: 40px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .dishes-container .mobile-menu-close-button {
+    position: absolute;
+    top: 2px;
+    right: -8px;
+    z-index: 1;
+  }
+}
+
+.dish {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 4px 12px;
+}
+
+.dish-price {
+  display: inline-flex;
+  align-items: center;
+  gap: 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dish-description {
+  grid-column: span 2;
+  font-size: 14px;
+  color: var(--secondaryTextColor);
+}
+
+.ala-carte .dish-description {
+  display: flex;
+}
+
+.ala-carte .dish {
+  row-gap: 8px;
+}
+
+.kitchen .dish {
+  grid-template-rows: auto auto 1fr;
+}
+
+.multi-price-column {
+  margin-right: 48px;
+}
+
+.multi-price-column .dish-price {
+  display: block;
+  color: var(--mainTextColor);
+}
+
+.multi-price-column .dish-price,
+.multi-price-rows,
+.multi-price-rows > p {
+  margin-top: 4px;
+}
+
+.multi-price-rows .dish-price {
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.note-marker {
+  position: relative;
+  top: -4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  transform: scaleY(1.2);
+}
+
+.disclaimer {
+  position: relative;
+  grid-column: 1 / -1;
+  font-size: 14px;
+  color: var(--secondaryTextColor);
+}
+
+.disclaimer .note-marker {
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+/* END Dishes Styles */

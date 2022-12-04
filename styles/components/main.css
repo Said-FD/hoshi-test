@@ -1,0 +1,22 @@
+/* Main Styles */
+.main {
+  position: relative;
+}
+
+@media (min-width: 600px) {
+  .main {
+    display: grid;
+    grid-template-columns: 275px 1fr;
+    column-gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 599px) {
+  .main {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+/* END Main Styles */

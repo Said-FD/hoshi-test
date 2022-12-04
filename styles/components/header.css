@@ -1,0 +1,130 @@
+/* Header Styles */
+.header {
+  display: grid;
+  border-bottom: var(--mainBorder);
+}
+
+@media (min-width: 1280px) {
+  .header {
+    grid-template-columns: 1fr 375px 1fr;
+    column-gap: 100px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1279px) {
+  .header {
+    grid-template-columns: 1fr 220px 1fr;
+    column-gap: 50px;
+    padding-bottom: 32px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    justify-items: center;
+    row-gap: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.header-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .header-contacts {
+    align-items: flex-end;
+  }
+
+  .header-link {
+    text-align: right;
+    font-size: 14px;
+  }
+
+  .header-link > span {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header-link {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  .header-link > span {
+    margin-left: 15px;
+  }
+}
+
+.header-link + .header-link {
+  margin-top: 17px;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 8px;
+}
+
+@media (min-width: 1280px) {
+  .header-logo {
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1279px) {
+  .header-logo svg {
+    position: relative;
+    top: -10px;
+    width: 220px;
+    height: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .header-logo {
+    order: -1;
+  }
+
+  .header-logo svg {
+    width: 188px;
+    height: auto;
+  }
+}
+
+.header-action {
+  display: flex;
+}
+
+@media (min-width: 992px) {
+  .header-action {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .header-action .action-button-dark {
+    margin-top: 16px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 991px) {
+  .header-action .action-button-dark {
+    margin-left: 24px;
+  }
+}
+
+@media (max-width: 425px) {
+  .header-action {
+    flex-direction: column;
+  }
+
+  .header-action .action-button-dark {
+    margin-top: 16px;
+  }
+}
+/* END Header Styles */

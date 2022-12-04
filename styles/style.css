@@ -1,0 +1,8 @@
+@import 'base/reset.css';
+@import 'base/variables.css';
+@import 'base/global.css';
+@import 'components/header.css';
+@import 'components/main.css';
+@import 'components/navigation.css';
+@import 'components/dishes.css';
+@import 'components/footer.css';

@@ -1,0 +1,14 @@
+/* Global CSS Custom Properties */
+:root {
+  --mainTextColor: #111;
+  --inverseTextColor: #fff;
+  --secondaryTextColor: #757575;
+  --mainBgColor: #fffdf7;
+  --secondaryBgColor: #303030;
+  --secondaryBgColorHover: #555;
+  --accentColor: #ffbf00;
+  --accentColorHover: #f7b707;
+  --buttonBorderRadius: 10px;
+  --mainBorder: 1px solid var(--secondaryTextColor);
+}
+/* END Global CSS Custom Properties */

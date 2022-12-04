@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hoshi & Sushi | Asian Cuisine</title>
+  <meta name="description" content="Hoshi & Sushi. Asian Cuisine. tel: +1 305-763-8946. 5401 Collins Ave, Cu5, Miami Beach, FL 33140">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"><!-- any -->
+  <link rel="apple-touch-icon" href="favicon/favicon-180.png"><!-- 180×180 -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ffbf00">
+</head>
+<body class="body">
+  <aside class="cuisine-link">
+    <a href="thai-cuisine.html" class="link">
+      Switch to
+      <span class="link-uppercase">thai cuisine</span>
+      <svg width="16" height="16">
+        <use href="#icon-arrow-right"></use>
+      </svg>
+    </a>
+  </aside>
+
+  <header class="header">
+    <div class="header-contacts">
+      <a class="link header-link" href="tel:+13057638946">
+        <span>305-763-8946</span>
+        <svg width="24" height="24" aria-hidden="true">
+          <use href="#icon-phone"></use>
+        </svg>
+      </a>
+
+      <a class="link header-link" href="#mapAsian">
+        <span>5401 Collins Ave, Miami Beach, FL</span>
+        <svg width="24" height="24" aria-hidden="true">
+          <use href="#icon-pin_marker"></use>
+        </svg>
+      </a>
+
+      <a class="link header-link" href="https://www.instagram.com/hoshiandsushi/" target="_blank" rel="noopener noreferrer">
+        <span>@hoshiandsushi</span>
+        <svg width="24" height="24" aria-hidden="true">
+          <use href="#icon-instagram"></use>
+        </svg>
+      </a>
+    </div>
+
+    <div class="header-logo" aria-label="Hoshi and Sushi. Asian Cuisine">
+      <svg width="374" height="200">
+        <use href="#logo-hoshi"></use>
+      </svg>
+    </div>
+
+    <div class="header-action">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        class="action-button"
+        aria-label="order on Clover"
+        href="https://www.clover.com/online-ordering/hoshi--seo-miami-beach"
+      >
+        Order Now
+      </a>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        class="action-button action-button-dark"
+        aria-label="reserve on Yelp"
+        href="https://www.yelp.com/reservations/hoshi-and-sushi-miami-beach?from_reserve_now=1"
+      >
+        Reserve Now
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+    <nav aria-label="menu navigation">
+      <ul class="navigation">
+        <li>
+          <button type="button" id="hot-plates" class="is-active">
+            <svg width="24" height="24" aria-hidden="true">
+              <use href="#icon-hot"></use>
+            </svg>
+            <span>Hot small plates</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" id="cold-plates">
+            <svg width="24" height="24" aria-hidden="true">
+              <use href="#icon-cold"></use>
+            </svg>
+            <span>Cold small plates</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" id="soups">
+            <svg width="24" height="24" aria-hidden="true">
+              <use href="#icon-soups"></use>
+            </svg>
+            <span>Soups</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" id="salad">
+            <svg width="24" height="24" aria-hidden="true">
+              <use href="#icon-salad"></use>
+            </svg>
+            <span>Salads</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" id="veg-rolls">
+            <svg width="24" height="24" aria-hidden="true">
+              <use href="#icon-veg_rolls"></use>
+            </svg>
+            <span>Vegetable rolls</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" id="rolls">
+            <svg width="24" height="24" aria-hidden="true">
+              <use href="#icon-rolls"></use>
+            </svg>
+            <span>Sushi rolls</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" id="ala-carte">
+            <svg width="24" height="24" aria-hidden="true">
+              <use href="#icon-ala_carte"></use>
+            </svg>
+            <span>Sushi + Sashimi</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" id="signature-roll">
+            <svg width="24" height="24" aria-hidden="true">
+              <use href="#icon-signature_roll"></use>
+            </svg>
+            <span>Signature rolls</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" id="sushi-combo">
+            <svg width="24" height="24" aria-hidden="true">
+              <use href="#icon-sushi_combo"></use>
+            </svg>
+            <span>Sushi combo</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" id="kitchen">
+            <svg width="24" height="24" aria-hidden="true">
+              <use href="#icon-kitchen"></use>
+            </svg>
+            <span>Kitchen</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" id="dessert">
+            <svg width="24" height="24" aria-hidden="true">
+              <use href="#icon-dessert"></use>
+            </svg>
+            <span>Dessert</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="dishes-container">
+      <button
+        type="button"
+        aria-label="go to menu categories"
+        class="mobile-menu-close-button is-desktop-hidden is-mobile-hidden" 
+      >
+        <svg width="14" height="14" aria-hidden="true">
+          <use href="#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="dishes-list hot-plates is-active is-mobile-hidden">
+        <li class="dish-category is-desktop-hidden">
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="#icon-hot"></use>
+          </svg>
+          <span>Hot small plates</span>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Edamame</p>
+          <span class="dish-price">$7.95</span>
+          <p class="dish-description">Steamed soy beans / sea salt or cajun spice</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Gyoza</p>
+          <span class="dish-price">$11.95</span>
+          <p class="dish-description">Steamed or deep-fried / pork or veggies dumplings</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Crispy Spring Roll</p>
+          <span class="dish-price">$11.95</span>
+          <p class="dish-description">Crispy vegetables spring rolls</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Shumai</p>
+          <span class="dish-price">$11.95</span>
+          <p class="dish-description">Steamed or deep-fried shrimp dumplings</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Bulgogi Taco</p>
+          <span class="dish-price">$12.95</span>
+          <p class="dish-description">Sweet soy sauce marinated thinly sliced beef / mushrooms / lettuce / spicy mayo</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">New Age Tofu</p>
+          <span class="dish-price">$11.95</span>
+          <p class="dish-description">Deep fried tofu / sauteed mushrooms / scallions / warm teriyaki sauce</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Shrimp Tempura Appetizer</p>
+          <span class="dish-price">$13.95</span>
+          <p class="dish-description">Lightly battered and fried shrimp / assorted vegetables / sesame</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Veggie Tempura Appetizer</p>
+          <span class="dish-price">$11.95</span>
+          <p class="dish-description">Lightly battered and deep-fried veggie</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Coconut Shrimp</p>
+          <span class="dish-price">$12.95</span>
+          <p class="dish-description">Deep fried shrimp with sweet chili</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Takoyaki</p>
+          <span class="dish-price">$10.95</span>
+          <p class="dish-description">Ball-shaped octopus fritter / masago / scallions</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Soft-Shell Crab Appetizer</p>
+          <span class="dish-price">$15.95</span>
+          <p class="dish-description">Lightly fried soft-shell crab / yuzu ponzu sauce</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Shishito Peppers</p>
+          <span class="dish-price">$10.95</span>
+          <p class="dish-description">Mildly spicy fried green peppers / sesame</p>
+        </li>
+      </ul>
+
+      <ul class="dishes-list cold-plates is-mobile-hidden">
+        <li class="dish-category is-desktop-hidden">
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="#icon-cold"></use>
+          </svg>
+          <span>Cold small plates</span>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Crispy Spicy Tuna Rice</p>
+          <span class="dish-price">$15.95</span>
+          <p class="dish-description">Crispy rice / spicy tuna / masago / scallions / spicy mayo / eel sauce / yuzu mayo</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Salmon Carpaccio</p>
+          <span class="dish-price">$14.95</span>
+          <p class="dish-description">Thinly sliced salmon / avocado / masago / yuzu mayo / micro greens / ponzu</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Hamachi Jalapeno</p>
+          <span class="dish-price">$15.95</span>
+          <p class="dish-description">Thinly sliced yellowtail / jalapeno / micro cilantro / masago / spicy mayo / ponzu</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Tuna Tataki</p>
+          <span class="dish-price">$14.95</span>
+          <p class="dish-description">Seared tuna / avocado / micro greens / masago / yuzu mayo / ponzu</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Hoshi Spicy Tuna Taco</p>
+          <span class="dish-price">$12.95</span>
+          <p class="dish-description">Spicy marinated tuna / avocado / crunchy chips / lettuce / scallions / masago / spicy mayo</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Kanisu</p>
+          <span class="dish-price">$12.95</span>
+          <p class="dish-description">Krab and avocado wrapped in thin cucumber / rice vinegar</p>
+          <p class="dish-description">* Add Fish + $3.00</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Tuna Tartar</p>
+          <span class="dish-price">$16.95</span>
+          <p class="dish-description">Tuna / avocado / red onions / sesame oil / potato chips and scallions on top</p>
+        </li>
+      </ul>
+
+      <ul class="dishes-list soups is-mobile-hidden">
+        <li class="dish-category is-desktop-hidden">
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="#icon-soups"></use>
+          </svg>
+          <span>Soups</span>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Miso soup</p>
+          <span class="dish-price">$4.50</span>
+          <p class="dish-description">Tofu / seaweed / scallions</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Gyoza soup</p>
+          <span class="dish-price">$5.95</span>
+          <p class="dish-description">Clear broth / pork or veggies dumplings / scallions</p>
+        </li>
+      </ul>
+
+      <ul class="dishes-list salad is-mobile-hidden">
+        <li class="dish-category is-desktop-hidden">
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="#icon-salad"></use>
+          </svg>
+          <span>Salads</span>
+        </li>
+        <li class="dish">
+          <p class="dish-name">House Salad</p>
+          <span class="dish-price">$4.95</span>
+          <p class="dish-description">Iceberg lettuce / cabbage / carrots / home-made ginger dressing</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Seaweed Salad</p>
+          <span class="dish-price">$7.95</span>
+          <p class="dish-description">Marinated seaweed</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Kimchi Salad</p>
+          <span class="dish-price">$6.95</span>
+          <p class="dish-description">Marinated napa cabbage</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Crunchy Avocado Krab Salad</p>
+          <span class="dish-price">$12.95</span>
+          <p class="dish-description">Krab / avocado / spicy mayo / masago / crunchy chips</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Sunomono</p>
+          <span class="dish-price">$14.95</span>
+          <p class="dish-description">Octopus / shrimp / kani / cucumber / avocado / spicy vinegar / yuzu mayo</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Spicy Sashimi Salad</p>
+          <span class="dish-price">$14.95</span>
+          <p class="dish-description">Tuna / salmon / white fish / avocado / cucumber / masago / ponzu sauce</p>
+        </li>
+      </ul>
+
+      <ul class="dishes-list veg-rolls is-mobile-hidden">
+        <li class="dish-category is-desktop-hidden">
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="#icon-veg_rolls"></use>
+          </svg>
+          <span>Vegetable rolls</span>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Cucumber Roll</p>
+          <span class="dish-price">$6.95</span>
+          <p class="dish-description"></p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Avocado Roll</p>
+          <span class="dish-price">$7.95</span>
+          <p class="dish-description"></p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Vegetable Roll</p>
+          <span class="dish-price">$9.95</span>
+          <p class="dish-description">Avocado / cucumber / asparagus</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Tempura Vegetable</p>
+          <span class="dish-price">$10.95</span>
+          <p class="dish-description">Avocado / cucumber / cream cheese</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">* Add mango</p>
+          <span class="dish-price">$1.00</span>
+          <p class="dish-description"></p>
+        </li>
+      </ul>
+
+      <ul class="dishes-list rolls is-mobile-hidden">
+        <li class="dish-category is-desktop-hidden">
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="#icon-rolls"></use>
+          </svg>
+          <span>Sushi rolls</span>
+        </li>
+        <li class="dish">
+          <p class="dish-name">California</p>
+          <span class="dish-price">$8.95</span>
+          <p class="dish-description">Krab meat / cucumber / avocado</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Alaska</p>
+          <span class="dish-price">
+            $11.95
+            <span class="note-marker" aria-hidden="true">
+              <svg width="16" height="16">
+                <use href="#logo-hoshi-small"></use>
+              </svg>
+            </span>
+          </span>
+          <p class="dish-description">Salmon / avocado / cream cheese</p>
+          <p class="dish-description">* Add tempura + $2.00</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Spicy Tuna</p>
+          <span class="dish-price">
+            $10.95
+            <span class="note-marker" aria-hidden="true">
+              <svg width="16" height="16">
+                <use href="#logo-hoshi-small"></use>
+              </svg>
+            </span>
+          </span>
+          <p class="dish-description">Spicy tuna / scallions / crunchy chips</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Negi-Hamachi</p>
+          <span class="dish-price">
+            $11.95
+            <span class="note-marker" aria-hidden="true">
+              <svg width="16" height="16">
+                <use href="#logo-hoshi-small"></use>
+              </svg>
+            </span>
+          </span>
+          <p class="dish-description">Yellowtail / scallions</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Eel Roll</p>
+          <span class="dish-price">$11.95</span>
+          <p class="dish-description">Baked eel / cucumber / scallions</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Snow White Roll</p>
+          <span class="dish-price">$10.95</span>
+          <p class="dish-description">White tuna / cucumber / scallions</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Salmon Skin</p>
+          <span class="dish-price">
+            $8.95
+            <span class="note-marker" aria-hidden="true">
+              <svg width="16" height="16">
+                <use href="#logo-hoshi-small"></use>
+              </svg>
+            </span>
+          </span>
+          <p class="dish-description">Grilled salmon skin / avocado / asparagus / scallions</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Shrimp Tempura</p>
+          <span class="dish-price">$10.95</span>
+          <p class="dish-description">Tempura shrimp / avocado</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">* Sub Soy Paper</p>
+          <span class="dish-price">$2.00</span>
+          <p class="dish-description"></p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">* Temaki (hand roll) also available</p>
+          <span class="dish-price"></span>
+          <p class="dish-description"></p>
+        </li>
+        <li class="disclaimer">
+          <span class="note-marker" aria-hidden="true">
+            <svg width="16" height="16">
+              <use href="#logo-hoshi-small"></use>
+            </svg>
+          </span>
+          <p>Raw / Consuming raw or undercooked MEATS, POULTRY, SEAFOODS, SHELLFISH or EGGS may increase your RISK of food borne illness, especially if you have certain medical conditions or if you are pregnant.</p>
+          <p>18% service charge will be automatically added to your bill</p>
+        </li>
+      </ul>
+
+      <ul class="dishes-list ala-carte is-mobile-hidden">
+        <li class="dish-category is-desktop-hidden">
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="#icon-ala_carte"></use>
+          </svg>
+          <span>Sushi + Sashimi</span>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Tamago (Sweet egg)</p>
+          <div class="dish-description">
+            <div class="multi-price-column">
+              <p>Sushi piece</p>
+              <span class="dish-price">$3.50</span>
+            </div>
+            <div class="multi-price-column">
+              <p>Sashimi pair</p>
+              <span class="dish-price">$6.50</span>
+            </div>
+          </div>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Masago</p>
+          <div class="dish-description">
+            <div class="multi-price-column">
+              <p>Sushi piece</p>
+              <span class="dish-price">$3.50</span>
+            </div>
+            <div class="multi-price-column">
+              <p>Sashimi pair</p>
+              <span class="dish-price">$6.50</span>
+            </div>
+          </div>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Kani</p>
+          <div class="dish-description">
+            <div class="multi-price-column">
+              <p>Sushi piece</p>
+              <span class="dish-price">$3.50</span>
+            </div>
+            <div class="multi-price-column">
+              <p>Sashimi pair</p>
+              <span class="dish-price">$6.50</span>
+            </div>
+          </div>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Shrimp</p>
+          <div class="dish-description">
+            <div class="multi-price-column">
+              <p>Sushi piece</p>
+              <span class="dish-price">$4.50</span>
+            </div>
+            <div class="multi-price-column">
+              <p>Sashimi pair</p>
+              <span class="dish-price">$8.50</span>
+            </div>
+          </div>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Salmon</p>
+          <div class="dish-description">
+            <div class="multi-price-column">
+              <p>Sushi piece</p>
+              <span class="dish-price">$4.50</span>
+            </div>
+            <div class="multi-price-column">
+              <p>Sashimi pair</p>
+              <span class="dish-price">$8.50</span>
+            </div>
+          </div>
+        </li>
+        <li class="dish">
+          <p class="dish-name">White Tune</p>
+          <div class="dish-description">
+            <div class="multi-price-column">
+              <p>Sushi piece</p>
+              <span class="dish-price">$4.50</span>
+            </div>
+            <div class="multi-price-column">
+              <p>Sashimi pair</p>
+              <span class="dish-price">$8.50</span>
+            </div>
+          </div>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Snapper</p>
+          <div class="dish-description">
+            <div class="multi-price-column">
+              <p>Sushi piece</p>
+              <span class="dish-price">$4.50</span>
+            </div>
+            <div class="multi-price-column">
+              <p>Sashimi pair</p>
+              <span class="dish-price">$8.50</span>
+            </div>
+          </div>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Eel</p>
+          <div class="dish-description">
+            <div class="multi-price-column">
+              <p>Sushi piece</p>
+              <span class="dish-price">$5.00</span>
+            </div>
+            <div class="multi-price-column">
+              <p>Sashimi pair</p>
+              <span class="dish-price">$9.50</span>
+            </div>
+          </div>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Yellowtail</p>
+          <div class="dish-description">
+            <div class="multi-price-column">
+              <p>Sushi piece</p>
+              <span class="dish-price">$5.00</span>
+            </div>
+            <div class="multi-price-column">
+              <p>Sashimi pair</p>
+              <span class="dish-price">$9.50</span>
+            </div>
+          </div>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Wahoo</p>
+          <div class="dish-description">
+            <div class="multi-price-column">
+              <p>Sushi piece</p>
+              <span class="dish-price">$5.00</span>
+            </div>
+            <div class="multi-price-column">
+              <p>Sashimi pair</p>
+              <span class="dish-price">$9.50</span>
+            </div>
+          </div>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Tuna</p>
+          <div class="dish-description">
+            <div class="multi-price-column">
+              <p>Sushi piece</p>
+              <span class="dish-price">$5.00</span>
+            </div>
+            <div class="multi-price-column">
+              <p>Sashimi pair</p>
+              <span class="dish-price">$9.50</span>
+            </div>
+          </div>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Madai</p>
+          <div class="dish-description">
+            <div class="multi-price-column">
+              <p>Sushi piece</p>
+              <span class="dish-price">$6.00</span>
+            </div>
+            <div class="multi-price-column">
+              <p>Sashimi pair</p>
+              <span class="dish-price">$11.50</span>
+            </div>
+          </div>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Octopus</p>
+          <div class="dish-description">
+            <div class="multi-price-column">
+              <p>Sushi piece</p>
+              <span class="dish-price">$6.00</span>
+            </div>
+            <div class="multi-price-column">
+              <p>Sashimi pair</p>
+              <span class="dish-price">$11.50</span>
+            </div>
+          </div>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Ikura (Salmon egg)</p>
+          <div class="dish-description">
+            <div class="multi-price-column">
+              <p>Sushi piece</p>
+              <span class="dish-price">$7.00</span>
+            </div>
+            <div class="multi-price-column">
+              <p>Sashimi pair</p>
+              <span class="dish-price">$13.50</span>
+            </div>
+          </div>
+          <p class="dish-description">* Add Quall Egg + $1.00</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Chu Toro</p>
+          <div class="dish-description">
+            <div class="multi-price-column">
+              <p>Sushi piece</p>
+              <span class="dish-price">$8.00</span>
+            </div>
+            <div class="multi-price-column">
+              <p>Sashimi pair</p>
+              <span class="dish-price">$15.50</span>
+            </div>
+          </div>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Uni</p>
+          <div class="dish-description">
+            <div class="multi-price-column">
+              <p>Sushi piece</p>
+              <span class="dish-price">$9.00</span>
+            </div>
+            <div class="multi-price-column">
+              <p>Sashimi pair</p>
+              <span class="dish-price">$17.50</span>
+            </div>
+          </div>
+          <p class="dish-description">* Add Quall Egg + $1.00</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">O-Toro</p>
+          <div class="dish-description">
+            <div class="multi-price-column">
+              <p>Sushi piece</p>
+              <span class="dish-price">$10.00</span>
+            </div>
+            <div class="multi-price-column">
+              <p>Sashimi pair</p>
+              <span class="dish-price">$19.50</span>
+            </div>
+          </div>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Wagyu</p>
+          <div class="dish-description">
+            <div class="multi-price-column">
+              <p>Sushi piece</p>
+              <span class="dish-price">$10.00</span>
+            </div>
+            <div class="multi-price-column">
+              <p></p>
+              <span class="dish-price"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="dishes-list signature-roll is-mobile-hidden">
+        <li class="dish-category is-desktop-hidden">
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="#icon-signature_roll"></use>
+          </svg>
+          <span>Signature rolls</span>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Scarlett</p>
+          <span class="dish-price">
+            $14.95
+            <span class="note-marker" aria-hidden="true">
+              <svg width="16" height="16">
+                <use href="#logo-hoshi-small"></use>
+              </svg>
+            </span>
+          </span>
+          <p class="dish-description">Salmon / krab / cream cheese / scallions /crunchy chips / avocado on top</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Crispy Tuna</p>
+          <span class="dish-price">
+            $13.95
+            <span class="note-marker" aria-hidden="true">
+              <svg width="16" height="16">
+                <use href="#logo-hoshi-small"></use>
+              </svg>
+            </span>
+          </span>
+          <p class="dish-description">Spicy tuna / scallions / tempura flakes / avocado on top</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Volcano</p>
+          <span class="dish-price">$14.95</span>
+          <p class="dish-description">White fish tempura / cucumber / avocado / scallions / baked krab & shrimp dinamite</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Dragon</p>
+          <span class="dish-price">$12.95</span>
+          <p class="dish-description">Tempura shrimp / asparagus / cream cheese / avocado on top</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Hoshi Dragon</p>
+          <span class="dish-price">
+            $15.95
+            <span class="note-marker" aria-hidden="true">
+              <svg width="16" height="16">
+                <use href="#logo-hoshi-small"></use>
+              </svg>
+            </span>
+          </span>
+          <p class="dish-description">Salmon / tempura shrimp / eel / cream cheese / masago / avocado and scallions on top</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Latino</p>
+          <span class="dish-price">
+            $15.95
+            <span class="note-marker" aria-hidden="true">
+              <svg width="16" height="16">
+                <use href="#logo-hoshi-small"></use>
+              </svg>
+            </span>
+          </span>
+          <p class="dish-description">Tuna / cucumber / micro cilantro / lime / rice crackers and avocado on top / spicy sauce</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Happy Jalapeno</p>
+          <span class="dish-price">
+            $16.95
+            <span class="note-marker" aria-hidden="true">
+              <svg width="16" height="16">
+                <use href="#logo-hoshi-small"></use>
+              </svg>
+            </span>
+          </span>
+          <p class="dish-description">Yellowtail / avocado / micro cilantro / lime / jalapeno on top/ spicy sauce</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Rock & Roll (tempura)</p>
+          <span class="dish-price">
+            $15.95
+            <span class="note-marker" aria-hidden="true">
+              <svg width="16" height="16">
+                <use href="#logo-hoshi-small"></use>
+              </svg>
+            </span>
+          </span>
+          <p class="dish-description">Salmon / avocado / cream cheese / scallions / dinamite krab on top</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Rainbow</p>
+          <span class="dish-price">
+            $13.95
+            <span class="note-marker" aria-hidden="true">
+              <svg width="16" height="16">
+                <use href="#logo-hoshi-small"></use>
+              </svg>
+            </span>
+          </span>
+          <p class="dish-description">Krab meat / cucumber / avocado / assorted fresh fish on top</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Kokoro</p>
+          <span class="dish-price">
+            $14.95
+            <span class="note-marker" aria-hidden="true">
+              <svg width="16" height="16">
+                <use href="#logo-hoshi-small"></use>
+              </svg>
+            </span>
+          </span>
+          <p class="dish-description">Krab salad / avocado / mango / spicy tuna and tempura flakes on top</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Hoshi Spider Roll</p>
+          <span class="dish-price">$13.95</span>
+          <p class="dish-description">Deep fried soft-shell crab / avocado / asparagus / masago / scallions</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Tuna Lover</p>
+          <span class="dish-price">
+            $16.95
+            <span class="note-marker" aria-hidden="true">
+              <svg width="16" height="16">
+                <use href="#logo-hoshi-small"></use>
+              </svg>
+            </span>
+          </span>
+          <p class="dish-description">Spicy tuna / avocado / crunchy potato chips / seared tuna / scallions / masago / topped with micro cilantro<p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Big Bang</p>
+          <span class="dish-price">$15.95</span>
+          <p class="dish-description">Tempura salmon / cream cheese / avocado / scallions / crunchy krab on top</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Spicy Girls</p>
+          <span class="dish-price">
+            $14.95
+            <span class="note-marker" aria-hidden="true">
+              <svg width="16" height="16">
+                <use href="#logo-hoshi-small"></use>
+              </svg>
+            </span>
+          </span>
+          <p class="dish-description">Krab / cucumber / avocado / scallions / spicy sashimi salad on top / masago</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Gangnam-Style</p>
+          <span class="dish-price">
+            $14.95
+            <span class="note-marker" aria-hidden="true">
+              <svg width="16" height="16">
+                <use href="#logo-hoshi-small"></use>
+              </svg>
+            </span>
+          </span>
+          <p class="dish-description">Tempura shrimp / eel / avocado / masago / scallions / tuna tataki / tempura flakes on top</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Three Seas</p>
+          <span class="dish-price">
+            $18.95
+            <span class="note-marker" aria-hidden="true">
+              <svg width="16" height="16">
+                <use href="#logo-hoshi-small"></use>
+              </svg>
+            </span>
+          </span>
+          <p class="dish-description">Salmon / tuna / white fish / avocado / asparagus / tamago / masago</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Dancing Eel</p>
+          <span class="dish-price">$15.95</span>
+          <p class="dish-description">Krab meat / cucumber / avocado / sesame / baked eel and scallions on top</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Samba</p>
+          <span class="dish-price">
+            $15.95
+            <span class="note-marker" aria-hidden="true">
+              <svg width="16" height="16">
+                <use href="#logo-hoshi-small"></use>
+              </svg>
+            </span>
+          </span>
+          <p class="dish-description">Soy paper / salmon / tuna / avocado / lemon / scallions / crunchy chips</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Geisha</p>
+          <span class="dish-price">
+            $18.95
+            <span class="note-marker" aria-hidden="true">
+              <svg width="16" height="16">
+                <use href="#logo-hoshi-small"></use>
+              </svg>
+            </span>
+          </span>
+          <p class="dish-description">Salmon / avocado / scallions / seared salmon / tobiko and truffle sauce on top</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">God Father</p>
+          <span class="dish-price">
+            $20.95
+            <span class="note-marker" aria-hidden="true">
+              <svg width="16" height="16">
+                <use href="#logo-hoshi-small"></use>
+              </svg>
+            </span>
+          </span>
+          <p class="dish-description">Tempura lobster / avocado / cream cheese / masago / scallions / tuna and salmon on top</p>
+        </li>
+        <li class="dish">
+            <p class="dish-name">Royal Rock Shrimp</p>
+            <span class="dish-price">$20.95</span>
+            <p class="dish-description">Soy paper / tempura salmon / avocado / krab meat / scallions / top with deep-fried shrimp and rice crackers on top</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Paradise</p>
+          <span class="dish-price">
+            $19.95
+            <span class="note-marker" aria-hidden="true">
+              <svg width="16" height="16">
+                <use href="#logo-hoshi-small"></use>
+              </svg>
+            </span>
+          </span>
+          <p class="dish-description">Salmon / avocado / cream cheese / seaweed salad and ikura on top</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">* All rolls comes with eel sauce, spicy mayo or yuzu mayo</p>
+        </li>
+        <li class="disclaimer">
+          <span class="note-marker" aria-hidden="true">
+            <svg width="16" height="16">
+              <use href="#logo-hoshi-small"></use>
+            </svg>
+          </span>
+          <p>Raw / Consuming raw or undercooked MEATS, POULTRY, SEAFOODS, SHELLFISH or EGGS may increase your RISK of food borne illness, especially if you have certain medical conditions or if you are pregnant.</p>
+          <p>18% service charge will be automatically added to your bill</p>
+        </li>
+      </ul>
+
+      <ul class="dishes-list sushi-combo is-mobile-hidden">
+        <li class="dish-category is-desktop-hidden">
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="#icon-sushi_combo"></use>
+          </svg>
+          <span>Sushi combo</span>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Hoshi Sushi</p>
+          <span class="dish-price">$27.95</span>
+          <p class="dish-description">Chef’s selection of 6 pieces of nigiri / California roll</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Hoshi Sashimi</p>
+          <span class="dish-price">$29.95</span>
+          <p class="dish-description">Chef’s selection of 12 pieces of sashimi</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Hoshi Sushi & Sashimi</p>
+          <span class="dish-price">$39.95</span>
+          <p class="dish-description">5 nigiri, 8 pieces of sashimi / California roll</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Hoshi Boat for 2</p>
+          <span class="dish-price">$69.95</span>
+          <p class="dish-description">8 nigiri / 12 sashimi / spicy tuna / Alaska roll</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Hoshi Boat Deluxe</p>
+          <span class="dish-price">$159.95</span>
+          <p class="dish-description">16 nigiri / 24 sashimi / Crispy Tuna roll / Alaska roll / Geisha roll / Dragon roll</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Hoshi Boat Royal</p>
+          <span class="dish-price">$229.95</span>
+          <p class="dish-description">20 nigiri / 28 sashimi / Geisha roll / Paradise roll / Crispy Tuna roll / Dancing roll / Dragon roll / Happy Jalapeno</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">* Add miso soup or house salad for $3.00</p>
+        </li>
+      </ul>
+
+      <ul class="dishes-list kitchen is-mobile-hidden">
+        <li class="dish-category is-desktop-hidden">
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="#icon-kitchen"></use>
+          </svg>
+          <span>Kitchen</span>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Teriyaki Selections</p>
+          <p class="dish-description">Seasonal sauteed vegetables / scallions / sesame</p>
+          <div class="multi-price-rows">
+            <p>
+              Chicken
+              <span class="dish-price">$17.95</span>
+            </p>
+            <p>
+              Beef
+              <span class="dish-price">$19.95</span>
+            </p>
+            <p>
+              Salmon
+              <span class="dish-price">$18.95</span>
+            </p>
+            <p>
+              Shrimp
+              <span class="dish-price">$18.95</span>
+            </p>
+          </div>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Sesame Ahi Tuna</p>
+          <span class="dish-price">$19.95</span>
+          <p class="dish-description">Pan seared / crusted sesame tuna / mushroom sauce / quinoa salad with arugula / avocado / tomatoes</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Hoshi Katsu</p>
+          <p class="dish-description">Panko-fried / French fries / tonkatsu sauce</p>
+          <div class="multi-price-rows">
+            <p>
+              Chicken
+              <span class="dish-price">$16.95</span>
+            </p>
+            <p>
+              Fish
+              <span class="dish-price">$17.95</span>
+            </p>
+            <p>
+          </div>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Bulgogi</p>
+          <span class="dish-price">$22.95</span>
+          <p class="dish-description">Korean style sweet soy marinated thinly sliced beef / mushrooms / mixed vegetables / sesame</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Chicken Fried Rice</p>
+          <span class="dish-price">$17.95</span>
+          <p class="dish-description">Chopped chicken breast / mixed vegetables / scrambled egg / scallions / spicy mayo</p>
+          <p class="dish-description">* Add Shrimp or Beef + $5.00</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Yakisoba</p>
+          <p class="dish-description">Stir fried Japanese noodles / mushrooms / vegetables / scallions / sesame</p>
+          <div class="multi-price-rows">
+            <p>
+              Chicken
+              <span class="dish-price">$17.95</span>
+            </p>
+            <p>
+              Beef
+              <span class="dish-price">$19.95</span>
+            </p>
+            <p>
+              Shrimp
+              <span class="dish-price">$18.95</span>
+            </p>
+          </div>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Creamy Salmon Pasta</p>
+          <span class="dish-price">$22.95</span>
+          <p class="dish-description">Yakisoba noodles in cream / white mushroom sauce mixed with pieces of salmon / topped with ikura and scallions</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">* Served with jasmin rice or roasted potato, add miso soup or house salad for $3.00</p>
+        </li>
+      </ul>
+
+      <ul class="dishes-list dessert is-mobile-hidden">
+        <li class="dish-category is-desktop-hidden">
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="#icon-dessert"></use>
+          </svg>
+          <span>Dessert</span>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Green Tea Ice Cream</p>
+          <span class="dish-price">$7.95</span>
+          <p class="dish-description"></p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Mochi Ice Cream</p>
+          <span class="dish-price">$7.95</span>
+          <p class="dish-description">Green tea / strawberry / mango</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Tempura Ice Cream</p>
+          <span class="dish-price">$10.95</span>
+          <p class="dish-description">Deep fried breaded ice cream</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Tempura Cheesecake</p>
+          <span class="dish-price">$11.95</span>
+          <p class="dish-description">New York style fried cheesecake / ice cream</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Thai Donuts</p>
+          <span class="dish-price">$12.95</span>
+          <p class="dish-description">5pc / Condensed milk / Nutella / vanilla ice cream / cinnamon</p>
+        </li>
+        <li class="dish">
+          <p class="dish-name">Lava Cake</p>
+          <span class="dish-price">$13.95</span>
+          <p class="dish-description">Chocolate cake with a crunchy crust and liquid chocolate center / vanilla ice cream</p>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <aside class="cuisine-link">
+      <a href="thai-cuisine.html" class="link">
+        Switch to
+        <span class="link-uppercase">thai cuisine</span>
+        <svg width="16" height="16">
+          <use href="#icon-arrow-right"></use>
+        </svg>
+      </a>
+    </aside>
+
+    <div class="footer-map" id="mapAsian"></div>
+
+    <div class="footer-about">
+      <div class="footer-logo">
+        <svg width="217" height="116">
+          <use href="#logo-hoshi"></use>
+        </svg>
+      </div>
+
+      <div class="footer-grid-item footer-phone">
+        <svg width="24" height="24" aria-hidden="true">
+          <use href="#icon-phone"></use>
+        </svg>
+        <span class="footer-subtitle">Phone</span>
+        <a class="grid-item-spanned" href="tel:+13057638946">305-763-8946</a>
+      </div>
+
+      <div class="footer-grid-item footer-address">
+        <svg width="24" height="24" aria-hidden="true">
+          <use href="#icon-pin_marker"></use>
+        </svg>
+        <p class="footer-subtitle">Address</p>
+        <p class="grid-item-spanned">5401 Collins Ave, Miami Beach, FL 33140</p>
+      </div>
+
+      <div class="footer-grid-item footer-hours">
+        <svg width="24" height="24" aria-hidden="true">
+          <use href="#icon-clock"></use>
+        </svg>
+        <p class="footer-subtitle">Hours</p>
+        <ul class="hours-list">
+          <li>
+            <p>Monday - Thursday</p>
+            <p class="secondary-text">12:00 PM - 10:00 PM</p>
+          </li>
+          <li>
+            <p>Friday - Sunday</p>
+            <p class="secondary-text">12:00 PM - 11:00 PM</p>
+          </li>
+        </ul>
+      </div>
+
+      <a class="link footer-link" href="https://www.instagram.com/hoshiandsushi/" target="_blank" rel="noopener noreferrer">
+        <svg width="24" height="24" aria-hidden="true">
+          <use href="#icon-instagram"></use>
+        </svg>
+        <span>@hoshiandsushi</span>
+      </a>
+    </div>
+  </footer>
+
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none">
+    <defs>
+      <symbol id="icon-ala_carte" fill="none" viewBox="0 0 24 24">
+        <path fill="#ffbf00" d="M2 17h20v2H2v-2zm11.84-9.21c.1-.24.16-.51.16-.79 0-1.1-.9-2-2-2s-2 .9-2 2c0 .28.06.55.16.79C6.25 8.6 3.27 11.93 3 16h18c-.27-4.07-3.25-7.4-7.16-8.21z" />
+      </symbol>
+      <symbol id="icon-arrow-right" fill="none" viewBox="0 0 17 16">
+        <path fill="currentColor" d="M8.5 0 7.09 1.41 12.67 7H.5v2h12.17l-5.58 5.59L8.5 16l8-8-8-8Z" />
+      </symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24">
+        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z" />
+      </symbol>
+      <symbol id="icon-close" viewBox="0 0 14 14">
+        <path d="M14 1.41L12.59 0 7 5.59 1.41 0 0 1.41 5.59 7 0 12.59 1.41 14 7 8.41 12.59 14 14 12.59 8.41 7 14 1.41z" />
+      </symbol>
+      <symbol id="icon-cold" fill="none" viewBox="0 0 24 24">
+        <path fill="#ffbf00" d="M22 11h-4.17l3.24-3.24-1.41-1.42L15 11h-2V9l4.66-4.66-1.42-1.41L13 6.17V2h-2v4.17L7.76 2.93 6.34 4.34 11 9v2H9L4.34 6.34 2.93 7.76 6.17 11H2v2h4.17l-3.24 3.24 1.41 1.42L9 13h2v2l-4.66 4.66 1.42 1.41L11 17.83V22h2v-4.17l3.24 3.24 1.42-1.41L13 15v-2h2l4.66 4.66 1.41-1.42L17.83 13H22v-2z" />
+      </symbol>
+      <symbol id="icon-dessert" fill="none" viewBox="0 0 24 24">
+        <path fill="#ffbf00" d="M12 6c1.11 0 2-.9 2-2 0-.38-.1-.73-.29-1.03L12 0l-1.71 2.97c-.19.3-.29.65-.29 1.03 0 1.1.9 2 2 2zm4.6 9.99l-1.07-1.07-1.08 1.07c-1.3 1.3-3.58 1.31-4.89 0l-1.07-1.07-1.09 1.07C6.75 16.64 5.88 17 4.96 17c-.73 0-1.4-.23-1.96-.61V21c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-4.61c-.56.38-1.23.61-1.96.61-.92 0-1.79-.36-2.44-1.01zM18 9h-5V7h-2v2H6c-1.66 0-3 1.34-3 3v1.54c0 1.08.88 1.96 1.96 1.96.52 0 1.02-.2 1.38-.57l2.14-2.13 2.13 2.13c.74.74 2.03.74 2.77 0l2.14-2.13 2.13 2.13c.37.37.86.57 1.38.57 1.08 0 1.96-.88 1.96-1.96V12C21 10.34 19.66 9 18 9z" />
+      </symbol>
+      <symbol id="icon-hot" fill="none" viewBox="0 0 24 24">
+        <path fill="#ffbf00" d="M19.48 12.35c-1.57-4.08-7.16-4.3-5.81-10.23.1-.44-.37-.78-.75-.55C9.29 3.71 6.68 8 8.87 13.62c.18.46-.36.89-.75.59-1.81-1.37-2-3.34-1.84-4.75.06-.52-.62-.77-.91-.34C4.69 10.16 4 11.84 4 14.37c.38 5.6 5.11 7.32 6.81 7.54 2.43.31 5.06-.14 6.95-1.87 2.08-1.93 2.84-5.01 1.72-7.69zm-9.28 5.03c1.44-.35 2.18-1.39 2.38-2.31.33-1.43-.96-2.83-.09-5.09.33 1.87 3.27 3.04 3.27 5.08.08 2.53-2.66 4.7-5.56 2.32z" />
+      </symbol>
+      <symbol id="icon-instagram" viewBox="0 0 24 24">
+        <path fill-rule="evenodd" d="M18.9233 3H5.07675C3.93 3 3 3.93 3 5.07675V18.9218C3 20.07 3.93 21 5.07675 21H18.924C20.0708 21 21 20.07 21 18.9218V5.07675C21 3.93 20.0708 3 18.9233 3zM12 8.53875c1.9117 0 3.462 1.54875 3.462 3.46125 0 1.9117-1.5503 3.462-3.462 3.462-1.9117 0-3.46125-1.551-3.46125-3.462 0-1.9125 1.54955-3.46125 3.46125-3.46125zm6.75 9.51975c0 .3817-.3097.6915-.693.6915H5.943c-.38325 0-.693-.3098-.693-.6915V10.5h1.42275c-.066.2362-.11475.48-.15.7282-.0375.2528-.06075.5093-.06075.7718 0 3.0592 2.4795 5.5387 5.538 5.5387 3.0585 0 5.538-2.4795 5.538-5.5387 0-.2625-.0233-.519-.0608-.771-.0352-.2482-.0839-.492-.1499-.7282H18.75v7.5577zm0-10.485c0 .38175-.3097.69225-.693.69225h-1.6305c-.3832 0-.6922-.3105-.6922-.69225V5.94225c0-.3825.309-.69225.6922-.69225h1.6305c.3833 0 .693.30975.693.69225V7.5735z" clip-rule="evenodd" />
+      </symbol>
+      <symbol id="icon-kitchen" fill="none" viewBox="0 0 24 24">
+        <path fill="#ffbf00" d="M8.10023 13.34l2.82997-2.83-7.01997-7.01001c-1.56 1.56-1.56 4.09 0 5.66l4.19 4.18001zm6.77997-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91001 2.28-4.65001.81-6.12001-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27001l-9.75997 9.76 1.41 1.41 6.88997-6.87 6.88 6.88 1.41-1.41-6.88-6.88 1.47-1.47z" />
+      </symbol>
+      <symbol id="icon-phone" viewBox="0 0 24 24">
+        <path d="M17.38 10.79l-2.2-2.2c-.28-.28-.36-.67-.25-1.02.37-1.12.57-2.32.57-3.57 0-.55.45-1 1-1H20c.55 0 1 .45 1 1 0 9.39-7.61 17-17 17-.55 0-1-.45-1-1v-3.49c0-.55.45-1 1-1 1.24 0 2.45-.2 3.57-.57.35-.12.75-.03 1.02.24l2.2 2.2c2.83-1.45 5.15-3.76 6.59-6.59z" />
+      </symbol>
+      <symbol id="icon-pin_marker" viewBox="0 0 24 24">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+      </symbol>
+      <symbol id="icon-rolls" fill="none" viewBox="0 0 24 24">
+        <ellipse cx="11.6053" cy="18.3158" fill="#ffbf00" rx="7.60526" ry="2.68421" />
+        <path fill="#ffbf00" fill-rule="evenodd" d="M11.6053 4c4.2002 0 7.6052 1.20176 7.6052 2.68421h.0002V18.3158H4.00021V6.70416L4 6.68421C4 5.20176 7.40499 4 11.6053 4zm.0002 4.47368c3.7061 0 6.7105-.80117 6.7105-1.78947 0-.9883-3.0044-1.78947-6.7105-1.78947-3.70615 0-6.71056.80117-6.71056 1.78947 0 .9883 3.00441 1.78947 6.71056 1.78947z" clip-rule="evenodd" />
+        <ellipse cx="11.6052" cy="6.68423" fill="#ffbf00" rx="3.13158" ry=".894737" />
+      </symbol>
+      <symbol id="icon-salad" fill="none" viewBox="0 0 24 24">
+        <path fill="#ffbf00" d="M8.55002 12c-1.07-.71-2.25-1.27-3.53-1.61 1.28.34 2.46.9 3.53 1.61zM18.98 10.39c-1.29.34-2.49.91-3.57 1.64 1.08-.73 2.28-1.3 3.57-1.64z" />
+        <path fill="#ffbf00" d="M15.49 9.63c-.18-2.79-1.31-5.51-3.43-7.63-2.14 2.14-3.32 4.86-3.55 7.63 1.28.68 2.46 1.56 3.49 2.63 1.03-1.06 2.21-1.94 3.49-2.63zm-6.5 2.65c-.14-.1-.3-.19-.45-.29.15.11.31.19.45.29zm6.42-.25c-.13.09-.27.16-.4.26.13-.1.27-.17.4-.26zM12 15.45C9.85 12.17 6.18 10 2 10c0 5.32 3.36 9.82 8.03 11.49.63.23 1.29.4 1.97.51.68-.12 1.33-.29 1.97-.51C18.64 19.82 22 15.32 22 10c-4.18 0-7.85 2.17-10 5.45z" />
+      </symbol>
+      <symbol id="icon-signature_roll" fill="none" viewBox="0 0 24 24">
+        <path fill="#ffbf00" d="M7.26316 14.7188C6.78947 13.7812 3 14.25 3 10.5c0-2.27555 1.27182-3.43637 2.36842-3.93249.1579.84208.7579 2.61999 1.89474 2.99499C5.84211 7.21875 7.73684 3 12 3c3.4105 0 4.8947 2.1875 5.2105 3.28125.9474 0 3.7895.9375 3.7895 4.21875 0 3.2812-3.3158 3.75-3.7895 4.2188-.3789.375-.4737 1.7187-.4737 3.2812H7.73684c0-1.4062-.09473-2.5312-.47368-3.2812zM8 20h9v2H8z" />
+      </symbol>
+      <symbol id="icon-soups" fill="none" viewBox="0 0 24 24">
+        <path fill="#ffbf00" d="M10.6451 3.86l-.07-.07c-.57-.62-.81995-1.41-.66995-2.2l.09-.59h-1.89l-.06.43c-.2 1.36.27 2.71 1.3 3.72l.07.06c.57.62.81995 1.41.66995 2.2L9.97515 8h1.90995l.06-.43c.21-1.36-.27-2.71-1.3-3.71zm4 0l-.07-.07c-.57-.62-.82-1.41-.67-2.2l.09-.59h-1.89l-.06.43c-.2 1.36.27 2.71 1.3 3.72l.07.06c.57.62.82 1.41.67 2.2l-.11.59h1.91l.06-.43c.21-1.36-.27-2.71-1.3-3.71zM2 20h20v2H2zM12 19c5.5228 0 10-4.4772 10-10H2c0 5.5228 4.47715 10 10 10z" />
+      </symbol>
+      <symbol id="icon-sushi_combo" fill="none" viewBox="0 0 24 24">
+        <path fill="#ffbf00" d="M12 2l-5.5 9h11L12 2zM17.5 22c2.4853 0 4.5-2.0147 4.5-4.5S19.9853 13 17.5 13 13 15.0147 13 17.5s2.0147 4.5 4.5 4.5zM3 13.5h8v8H3v-8z" />
+      </symbol>
+      <symbol id="icon-veg_rolls" fill="none" viewBox="0 0 24 24">
+        <path fill="#ffbf00" d="M6.05001 8.05c-2.73 2.73-2.73 7.15-.02 9.88 1.47-3.4 4.08999-6.24 7.35999-7.93-2.77 2.34-4.70999 5.61-5.38999 9.32C10.6 20.55 13.8 20.1 15.95 17.95 19.43 14.47 20 4 20 4S9.53001 4.57 6.05001 8.05z" />
+      </symbol>
+      <symbol id="logo-hoshi" fill="none" viewBox="0 0 374 200">
+        <path fill="#221f20" d="M244.25 78.1c-.83 0-1.61-.03-2.33-.08-30.24-2.06-45.16-14.21-44.35-36.11C198.58 14.64 216.15-.64 245.88.02c17 .38 45.87 9.04 46.17 39.08.1 10.09-3.45 18.6-10.55 25.29-10.84 10.23-27.59 13.71-37.25 13.71zm.08-75.09c-13.85 0-42.48 4.24-43.76 39.01-.75 20.26 12.85 31.05 41.56 33.01 8.55.59 26.24-2.37 37.32-12.81 6.47-6.1 9.7-13.86 9.6-23.08-.13-12.91-5.75-22.67-16.71-29.02-10.81-6.26-23.04-7.01-26.53-7.08-.47-.03-.97-.03-1.48-.03z" />
+        <path fill="#ffbf00" d="M275.64 27.9l-31.7-16.01c-1.28-.65-2.78-.54-3.98.28l-27.12 19.69c-1.84 1.26-2.45 3.84-1.41 5.9l14.07 27.83c.75 1.5 2.23 2.4 3.8 2.32l37.22-2.75c1.73-.08 3.24-1.32 3.76-3.1l7.53-28.76c.63-2.14-.29-4.45-2.17-5.4zm-6.88 5.05l-11.68 9.06c-.88.66-1.17 1.92-.68 2.96l5.76 11.04c.2.42-.2.89-.6.7l-14.1-6.85c-.67-.3-1.42-.22-2.03.2l-12.48 8.14c-.37.26-.83-.09-.73-.54l3.6-11.81c.24-1.07-.25-2.15-1.17-2.62l-12.84-6.63c-.44-.23-.31-.93.16-.97l15.49-1.89c.87-.08 1.6-.72 1.87-1.6l3.86-11.75c.15-.43.69-.49.89-.08l5.67 11.48c.38.76 1.11 1.23 1.92 1.23l16.82-1c.46 0 .65.64.27.93z" />
+        <path fill="#221f20" d="M306.84 48.08c1.63 0 2.95-1.32 2.95-2.94 0-1.62-1.32-2.94-2.95-2.94-1.63 0-2.95 1.32-2.95 2.94 0 1.62 1.33 2.94 2.95 2.94zM181.93 47.17c1.63 0 2.95-1.32 2.95-2.94 0-1.62-1.32-2.94-2.95-2.94-1.63 0-2.95 1.32-2.95 2.94a2.94 2.94 0 002.95 2.94z" />
+        <path fill="#ffbf00" d="M85.15 170.221c1.8 0 3.25-1.45 3.25-3.24 0-1.79-1.46-3.24-3.25-3.24-1.8 0-3.25 1.45-3.25 3.24 0 1.79 1.45 3.24 3.25 3.24z" />
+        <path fill="#221f20" d="M373.11 151.891c-.72-.46-2.66-1.54-3.68-3.89s-4.66-4.96-5.99-6.14c-1.33-1.18-4.86-5.89-6.09-8.85-1.23-2.97-.97-7.11 0-10.85.97-3.74 3.07-11.16 3.33-15.92.26-4.76.15-6.65-.2-7.06-.36-.41-3.02 4.76-5.63 10.54-2.61 5.78-5.07 9.77-6.29 9.62-1.23-.15-10.92-17.75-10.75-23.03.1-3.07 3.33-4.96 5.37-10.24s5.42-15.46 4.91-19.55c-.51-4.09-4.51-7.32-10.29-7.32-5.78 0-12.16 2.7-16.63 15.92-1.23 3.63-2.2 9.21-1.43 15.15.77 5.94 1.38 7.83.61 8.85-.77 1.02-15.92 15.97-19.29 20.88-3.38 4.91-8.85 11.72-10.8 16.79-1.95 5.07-3.84 10.18-3.84 14.38 0 4.2.36 8.8 2.35 11.87 2 3.07 3.28 2.61 2.97 7.73-.31 5.12 18.47 6.91 27.07 3.12 8.6-3.79 19.09-8.19 21.7-11.05 2.61-2.87 4.76-5.17 5.63-6.5.87-1.33 1.69-3.84 3.02-5.22s.77-3.48 1.69-3.74c.92-.26 4.76 1.94 8.75 5.27 3.99 3.33 7.57 4.45 12.59 3.12 1.59-.41 1.63-3.42.92-3.88zm-36.4-81.42c1.93-5.61 6.38-7.93 7.18-7.28.8.65-.75 6.33-1.2 8.23-.45 1.89-6.66 14.34-7.63 12.61-1.19-2.14-.31-7.88 1.65-13.56zm5.97 69.7c-1.52 4.27-1.08 4.56-1.72 6.52-.64 1.96-5.2 9.81-16.03 14.61-10.83 4.8-22.01 7.65-24.27 3.28-2.26-4.36-1.47-8.73.44-13.68 1.91-4.95 7.84-16.47 9.51-18.73 1.67-2.26 5.95-9.94 8.58-14.62 2.05-3.65 3.95-5.34 6.16-5.39 2.4-.05 2.67 5.94 8.16 11.77 5.49 5.83 6.08 7.31 7.31 8.87 1.22 1.59 3.38 3.11 1.86 7.37zM21.09 89.94c.23-.22.14-.75-.12-.75-3.91-.1-18.33 1.2-20.18 14.971-.45 6.41-.89 6.55-.77 14.51.19 11.97 1.64 12.44 1.57 14.49-.26 7.15 1.25 8.47 3.48 9.26 7.57 2.66 8.6.09 8.41-19.49-.03-.54.24-1.02.59-1.02 2.68-.04 13.7.29 16.4.07 5.63.2 8.11-4.62 8.45 2.03.32 6.23-2.95 15.74-4.66 18.61-1.72 2.87-2.56 3.37-.05 3.62 3.58.38 18-2.22 18.31-19.72.72-12.15 1.51-19.27-.12-24.51-2.55-6.9 2.36-13.82-5.68-15.65-8.79-2.1-7.59 13.27-7.39 21.64.01.64-.19 1.5-.93 1.42-4-.08-16.3 1.04-22.95-1.69a.834.834 0 01-.51-.85c.25-3.34.33-12.06 6.15-16.94zM122.75 123.011c-.93-8.86-1.33-7.94-.81-12.23s-2.84-11.82-5.62-15.12c-2.78-3.3-5.56-4.98-5.56-4.98s1.33 2.55.58 2.2c-.75-.35-8.34-5.96-13.15-6.49-7.94-.87-7.76 3.36-9.79 4.17-1.56.62-4.4-2.61-9.68-2.09-5.27.52-12.69 2.14-18.08 11.47-5.39 9.33-5.16 18.43-4.98 21.44.18 3.01.81 8.52 5.27 15.82 4.46 7.3 11.53 15.35 27.06 17.27s25.61-8.23 27.35-11.18c1.73-2.96 8.34-11.42 7.41-20.28zm-14.18 3.85c-1.92 7.6-7.98 12.13-12.83 13.6-4.85 1.47-12.51 1.79-19.15-4.66-6.64-6.45-7.92-18.19-5.3-26.24 2.62-8.04 8.74-11.59 12.45-12.07 3.51-.45 4.02.19 5.47-.06 1.45-.25 2-2.81 2.83-2.81 2.7 0 8.75 4.02 13.73 9.77 4.97 5.74 4.72 14.87 2.8 22.47zM172.72 108.361c1.87 1.81 7.08-.36 7.44-7 .36-6.64-2.55-10.29-6.71-14.16-4.16-3.87-11.82-5.76-20.07-5.11-8.25.66-17.66 3.79-23.13 12.04-5.47 8.25-5.47 15.1-1.82 22.26 3.65 7.15 11.97 10.29 14.89 11.16 2.92.88 13.06 1.39 16.86 1.53 3.8.14 10.65.8 11.16 2.12.51 1.31 0 5.98-7.59 8.61-7.59 2.63-14.37.8-16.05.44-1.68-.36-10.36-3.06-12.84-1.09-1.39 1.09-.15 4.45 2.04 5.98 2.19 1.53 9.85 8.32 19.92 7.3 10.07-1.02 17-3.5 22.84-9.41s8.54-11.24 6.64-16.05c-1.9-4.82-5.91-8.76-13.72-9.34-7.81-.58-26.56 0-31.01-5.69-4.45-5.69 2.04-13.94 8.25-15.62 6.2-1.68 12.92-1.31 18.61 2.63 5.69 3.94 1.96 7.14 4.29 9.4zM209.88 90.82c1.85.75-5.62 3.73-5.98 17.991-.04 1.7 9.81 1.75 16.16 1.9 6.34.14 8.89.8 9-1.55 1-5.24-.37-22.14 4.85-22.14 6.46.14 7.57 3.7 7.36 9.57.11 6.19 1.71 7.88 1.25 12.97-.4 3.1 1.56 28.39-5.8 33.55-7.37 5.15-15.18 4.57-15.18 4.57-.23-1.17 4.59-3.48 6.08-18.66.34-3.24 2.35-7.9-4.94-5.31-3.74 1.33-15.74-1.45-18.26.08-2.59 1.8.7 16.84-4.14 20.74-2.25 0-5.03 0-6.61-1.05-1.48-.99-1.79-3.01-2.58-3.89-1.64-1.83-2.18-3.06-.16-5.68.46-4.26-1.56-1.07-1.44-10.34.12-9.28-1.45-22.14 5.33-27.14 6.75-5.07 13.25-6.35 15.06-5.61zM266.82 85.83c1.05.13-3.54 3.04-4.72 10.81-1.18 7.771-2.36 16.021-2.3 20.931.06 4.91.12 17.14-1.37 22.04-1.49 4.91-2.11 6.15-4.41 6.27-2.3.12-5.65-1.12-6.77-4.47-1.12-3.35-2.05-4.16-.99-4.91 1.06-.75.07-5.9-.46-8.76-.53-2.86-.16-14.16.46-20.55.62-6.4.62-13.35 5.65-16.58 5.03-3.22 7.64-5.64 14.91-4.78zM120.36 170.141h-4.15l-.58 1.56h-3.73l4.44-9.45h3.98l4.44 9.45h-3.82l-.58-1.56zm-.76-2.04l-1.3-3.4-1.29 3.4h2.59zM126.29 168.581l3.47-.17c.08.45.23.8.46 1.03.38.38.91.57 1.61.57.52 0 .92-.1 1.21-.29.29-.19.42-.42.42-.68 0-.25-.13-.46-.4-.66-.27-.19-.89-.38-1.87-.55-1.6-.29-2.74-.67-3.43-1.15-.69-.48-1.03-1.08-1.03-1.82 0-.49.18-.95.53-1.38.35-.43.88-.77 1.59-1.02.71-.25 1.68-.37 2.91-.37 1.51 0 2.66.22 3.45.67.79.45 1.26 1.16 1.41 2.14l-3.44.16c-.09-.42-.28-.73-.58-.93-.29-.19-.7-.29-1.21-.29-.42 0-.74.07-.96.22-.21.14-.32.32-.32.53 0 .15.09.29.27.41.17.12.58.24 1.23.35 1.6.28 2.74.55 3.43.83.69.28 1.19.63 1.51 1.05.31.42.47.88.47 1.4 0 .61-.21 1.17-.63 1.68-.42.51-1 .9-1.76 1.16-.76.26-1.7.4-2.85.4-2.01 0-3.4-.31-4.18-.93-.78-.62-1.21-1.41-1.31-2.36zM139.98 162.251h3.66v9.45h-3.66v-9.45zM154.51 170.141h-4.15l-.58 1.56h-3.73l4.44-9.45h3.98l4.44 9.45h-3.82l-.58-1.56zm-.75-2.04l-1.3-3.4-1.29 3.4h2.59zM161.1 162.251h3.41l4.45 5.23v-5.23h3.44v9.45h-3.44l-4.43-5.19v5.19h-3.43v-9.45zM190.18 167.831l3.2.77c-.21.72-.55 1.32-1.02 1.8-.46.48-1.04.84-1.72 1.09-.68.25-1.56.37-2.62.37-1.28 0-2.33-.15-3.15-.45-.81-.3-1.52-.82-2.11-1.58-.59-.76-.89-1.71-.89-2.89 0-1.56.52-2.77 1.56-3.61 1.04-.84 2.51-1.26 4.41-1.26 1.49 0 2.66.24 3.51.72.85.48 1.48 1.22 1.9 2.22l-3.22.57c-.11-.29-.23-.5-.35-.63-.2-.22-.45-.4-.75-.52-.29-.12-.63-.18-.99-.18-.83 0-1.46.27-1.9.8-.33.4-.5 1.02-.5 1.86 0 1.05.2 1.77.6 2.15.4.39.96.58 1.68.58.7 0 1.23-.16 1.58-.47.35-.31.62-.74.78-1.34zM203.84 162.251h3.64v5.63c0 .56-.11 1.09-.33 1.58-.22.49-.56.93-1.02 1.3-.46.37-.95.63-1.46.78-.71.21-1.56.32-2.56.32-.58 0-1.2-.03-1.88-.1-.68-.07-1.25-.19-1.71-.38-.46-.19-.87-.46-1.25-.81-.38-.35-.64-.72-.78-1.09-.23-.6-.34-1.13-.34-1.6v-5.63h3.64v5.77c0 .52.18.92.54 1.21.36.29.85.43 1.49.43.63 0 1.12-.14 1.48-.43.36-.29.54-.69.54-1.21v-5.77zM211.03 162.251h3.66v9.45h-3.66v-9.45zM217.67 168.581l3.47-.17c.08.45.23.8.46 1.03.38.38.91.57 1.61.57.52 0 .92-.1 1.21-.29.29-.19.42-.42.42-.68 0-.25-.13-.46-.4-.66-.27-.19-.89-.38-1.87-.55-1.6-.29-2.74-.67-3.43-1.15-.69-.48-1.03-1.08-1.03-1.82 0-.49.18-.95.53-1.38.35-.43.88-.77 1.59-1.02.71-.25 1.67-.37 2.91-.37 1.51 0 2.66.22 3.45.67.79.45 1.26 1.16 1.42 2.14l-3.44.16c-.09-.42-.28-.73-.58-.93-.3-.2-.7-.29-1.21-.29-.42 0-.74.07-.96.22-.21.14-.32.32-.32.53 0 .15.09.29.27.41.17.12.58.24 1.23.35 1.6.28 2.74.55 3.43.83.69.28 1.19.63 1.51 1.05.31.42.47.88.47 1.4 0 .61-.21 1.17-.63 1.68-.42.51-1 .9-1.76 1.16-.75.26-1.7.4-2.85.4-2.01 0-3.4-.31-4.17-.93-.79-.62-1.23-1.41-1.33-2.36zM231.36 162.251h3.66v9.45h-3.66v-9.45zM238.65 162.251h3.41l4.45 5.23v-5.23h3.44v9.45h-3.44l-4.43-5.19v5.19h-3.43v-9.45zM253.36 162.251h9.79v2.02h-6.13v1.5h5.68v1.93h-5.68v1.86h6.3v2.14h-9.96v-9.45zM1.41 168.581l3.47-.17c.08.45.23.8.46 1.03.38.38.91.57 1.61.57.52 0 .92-.1 1.21-.29.29-.19.42-.42.42-.68 0-.25-.13-.46-.4-.66-.27-.19-.89-.38-1.87-.55-1.6-.29-2.74-.67-3.43-1.15-.69-.48-1.03-1.08-1.03-1.82 0-.49.18-.95.53-1.38.35-.43.88-.77 1.59-1.02.71-.25 1.68-.37 2.91-.37 1.51 0 2.66.22 3.45.67.79.45 1.26 1.16 1.41 2.14l-3.44.16c-.09-.42-.28-.73-.58-.93-.29-.19-.7-.29-1.21-.29-.42 0-.74.07-.96.22-.21.14-.32.32-.32.53 0 .15.09.29.27.41.17.12.58.24 1.23.35 1.6.28 2.74.55 3.43.83.69.28 1.19.63 1.51 1.05.31.42.47.88.47 1.4 0 .61-.21 1.17-.63 1.68-.42.51-1 .9-1.76 1.16-.76.26-1.7.4-2.85.4-2.01 0-3.4-.31-4.18-.93-.78-.62-1.21-1.41-1.31-2.36zM22.65 162.251h3.64v5.63c0 .56-.11 1.09-.33 1.58-.22.5-.56.93-1.02 1.3-.46.37-.95.63-1.46.78-.71.21-1.56.32-2.56.32-.58 0-1.2-.03-1.88-.1-.68-.07-1.25-.19-1.7-.38-.46-.19-.87-.46-1.25-.81-.38-.35-.64-.72-.78-1.09-.23-.6-.34-1.13-.34-1.6v-5.63h3.64v5.77c0 .52.18.92.54 1.21.36.29.85.43 1.49.43.63 0 1.12-.14 1.48-.43.36-.29.54-.69.54-1.21v-5.77h-.01zM29.07 168.581l3.47-.17c.08.45.23.8.46 1.03.38.38.91.57 1.61.57.52 0 .92-.1 1.21-.29.29-.19.42-.42.42-.68 0-.25-.13-.46-.4-.66-.27-.19-.89-.38-1.87-.55-1.6-.29-2.74-.67-3.43-1.15-.69-.48-1.03-1.08-1.03-1.82 0-.49.18-.95.53-1.38.35-.43.88-.77 1.59-1.02.71-.25 1.68-.37 2.91-.37 1.51 0 2.66.22 3.45.67.79.45 1.26 1.16 1.41 2.14l-3.44.16c-.09-.42-.28-.73-.58-.93-.29-.19-.7-.29-1.21-.29-.42 0-.74.07-.96.22-.21.14-.32.32-.32.53 0 .15.09.29.27.41.17.12.58.24 1.23.35 1.6.28 2.74.55 3.43.83.69.28 1.19.63 1.51 1.05.31.42.47.88.47 1.4 0 .61-.21 1.17-.63 1.68-.42.51-1 .9-1.76 1.16-.76.26-1.7.4-2.85.4-2.01 0-3.4-.31-4.18-.93-.78-.62-1.21-1.41-1.31-2.36zM42.63 162.251h3.65v3.31h3.99v-3.31h3.67v9.45h-3.67v-3.82h-3.99v3.82h-3.65v-9.45zM57.5 162.251h3.66v9.45H57.5v-9.45zM157.64 182.821v.83c0 .34-.06.56-.18.65-.12.09-.56.33-1.33.72-.77.39-1.5.85-2.2 1.38.27-.44.52-.76.74-.98.22-.22.53-.48.91-.79-.33-.15-.79-.22-1.37-.22-.91 0-1.89.2-2.94.6-1.05.4-1.95.88-2.68 1.43-.73.55-1.1 1.02-1.1 1.39 0 .2.11.36.34.48.23.12.58.22 1.08.29.5.07 1.11.12 1.85.14.74.02 1.65.04 2.74.04.79 0 1.3.03 1.53.1.23.07.34.22.34.45 0 .3-.13.65-.4 1.03s-.62.62-1.06.69c-.68.12-1.22.23-1.63.31-.4.08-.88.23-1.43.43-.55.2-1.17.5-1.84.88-1 .59-1.79 1.18-2.35 1.78-.56.6-.85 1.14-.85 1.6 0 .4.2.71.6.93.4.22.98.33 1.74.33 2.6 0 5.25-1.3 7.95-3.9.01.8-.06 1.5-.24 2.11-.17.61-.52 1.19-1.05 1.74-.44.46-1.08.91-1.93 1.33-.85.42-1.77.76-2.77 1.01s-1.94.38-2.82.38c-1.02 0-1.86-.27-2.53-.81-.67-.54-1-1.26-1-2.16 0-.65.16-1.3.48-1.94.32-.64.82-1.26 1.48-1.85.67-.59 1.51-1.13 2.53-1.61 1.02-.48 2.2-.86 3.53-1.14.19-.04.29-.11.29-.2 0-.1-.11-.16-.34-.18-.22-.02-.63-.03-1.23-.04-.6-.01-1.12-.04-1.58-.09-.45-.05-.93-.15-1.44-.32-.52-.18-.92-.49-1.2-.94-.28-.45-.42-.94-.42-1.49 0-.7.23-1.41.68-2.11.45-.71 1.1-1.35 1.92-1.92.83-.57 1.83-1.03 3.01-1.37 1.18-.35 2.46-.52 3.86-.52.81 0 1.37.05 1.69.15.32.1.5.24.56.4.06.16.06.53.06.98zM156.97 194.711v-.29c1.89-2.21 3.19-3.77 3.9-4.65.16-1 .55-1.5 1.17-1.5.15 0 .32.05.49.15l.07.23c-.03.1-.04.24-.04.42 0 .16.05.44.16.86s.19.77.25 1.06c.06.29.09.61.09.96 0 .54-.11 1.05-.33 1.54-.22.49-.54.96-.96 1.42-.42.45-.96.91-1.62 1.39.26.05.47.07.63.07.3 0 .62-.08.97-.25.35-.17.7-.39 1.07-.67.36-.28.79-.65 1.27-1.09v.82c-.94 1.02-1.78 1.79-2.52 2.31s-1.38.79-1.91.79c-.69 0-1.33-.33-1.91-.98-.34-.39-.56-.76-.64-1.12-.1-.38-.14-.86-.14-1.47zm4.1-1.87l-.2-1.78c-.45.57-1.43 1.67-2.91 3.29.44.11.74.25.9.43.16.18.39.53.68 1.04.5-.23.88-.54 1.15-.93.27-.39.4-.93.4-1.62 0-.08 0-.15-.01-.22 0-.08 0-.15-.01-.21z" />
+        <path fill="#221f20" d="M167.9 188.031h.47c.39-.77.74-1.32 1.06-1.64.31-.32.67-.48 1.08-.48.4 0 .6.1.6.3 0 .1-.16.36-.47.79-.31.43-.55.79-.71 1.09.25.03.47.06.67.09.19.02.35.04.46.06-.42.86-.94 1.75-1.57 2.65-.21-.02-.38-.03-.52-.04-.14-.01-.28-.02-.42-.04-.14-.01-.32-.03-.52-.04-.4.71-.73 1.34-1 1.9-.27.56-.47 1.07-.62 1.53-.14.46-.21.9-.21 1.32 0 .56.2.84.6.84.28 0 .64-.17 1.09-.5.45-.33 1.05-.84 1.81-1.52v.82c-1.98 2.39-3.44 3.58-4.39 3.58-.33 0-.6-.14-.8-.43-.2-.29-.3-.65-.3-1.1 0-.3.06-.66.17-1.07.11-.42.32-1.04.61-1.88-.1.1-.2.19-.29.29-.09.09-.18.18-.25.26-.08.08-.16.16-.25.24-.09.09-.18.17-.26.26v-.84c.77-.72 1.7-1.97 2.79-3.77-.11-.01-.21-.01-.31-.02s-.21-.01-.34-.01c-.43 0-.75.03-.97.1-.09.02-.17.05-.25.08-.08.03-.13.04-.16.04s-.04-.02-.04-.07c0-.27.15-.67.45-1.21.24-.46.47-.79.69-1.01.22-.22.48-.37.79-.45.31-.09.74-.12 1.31-.12zM171.23 198.261c-.12 0-.23-.05-.32-.16s-.13-.25-.13-.44c0-.15.08-.41.24-.79.16-.38.36-.72.59-1.01.24-.3.49-.45.74-.45.32 0 .47.21.47.62 0 .23-.08.52-.25.88-.17.36-.38.68-.63.94-.25.28-.48.41-.71.41zM186.73 187.481c.77.04 1.32.1 1.65.17.33.07.49.22.49.44 0 .1-.03.17-.08.2-.05.04-.14.07-.27.08-.12.02-.27.05-.44.08-.25.05-.66.14-1.23.29-.57.14-.89.21-.95.21-.29 0-.43-.2-.43-.6 0-.36.07-.82.2-1.38.14-.56.32-1.08.55-1.57.23-.48.47-.83.73-1.03.3-.24.77-.47 1.4-.71.63-.24 1.35-.44 2.13-.61.79-.17 1.51-.25 2.16-.25.33 0 .57.05.73.15.16.1.27.24.33.42.07.18.18.53.33 1.07.15.5.22 1.06.22 1.7 0 .77-.16 1.44-.48 2-.32.56-.77 1.08-1.34 1.55-.57.47-1.57 1.2-2.99 2.19-1.43.99-2.53 1.78-3.33 2.38-.07.06-.22.16-.45.32s-.43.32-.6.5c-.18.17-.36.39-.54.66.98-.11 2.54-.4 4.66-.89.58-.14 1.14-.29 1.69-.46.55-.17.88-.25.98-.25.18 0 .28.1.28.3 0 .19-.04.42-.12.69-.08.27-.19.55-.34.83-.15.28-.32.52-.52.73-.97 1-2.84 1.5-5.61 1.5-.72 0-1.2-.13-1.44-.38-.15-.15-.3-.48-.46-.99-.16-.51-.24-.89-.24-1.14 0-.42.19-.94.56-1.56.37-.61.89-1.25 1.54-1.89.65-.64 1.37-1.22 2.16-1.73 2.39-1.51 3.66-2.33 3.8-2.44.54-.41.96-.82 1.26-1.23.3-.42.46-.75.46-1 0-.23-.08-.4-.25-.53-.16-.13-.4-.19-.7-.19-.48 0-1.05.1-1.72.29-.67.19-1.35.47-2.03.83-.68.36-1.26.77-1.75 1.25zM202.92 184.031c.34.17.59.45.75.84.16.39.24.96.24 1.72 0 1.15-.21 2.39-.62 3.71-.41 1.32-.99 2.57-1.74 3.74-.74 1.17-1.6 2.13-2.56 2.88-1.08.85-1.96 1.27-2.65 1.27-.54 0-1.04-.18-1.51-.54-.47-.36-.84-.87-1.12-1.53-.28-.66-.42-1.44-.42-2.33 0-1.24.31-2.54.92-3.9.61-1.36 1.39-2.6 2.33-3.69.94-1.1 1.92-1.95 2.95-2.54 1.02-.59 1.9-.8 2.63-.62.49.1.75.44.8.99zm-2.53 2.4l.38-.89c-.43.24-.81.48-1.14.72-.33.24-.71.57-1.14 1-.43.43-.88.97-1.35 1.62-.76 1.08-1.34 2.13-1.73 3.15-.39 1.01-.58 1.88-.58 2.58 0 1.02.31 1.53.92 1.53.35 0 .86-.21 1.51-.64.66-.42 1.35-1 2.08-1.75.7-.72 1.32-1.52 1.85-2.41.53-.89.94-1.76 1.22-2.63.28-.87.42-1.6.42-2.21 0-.39-.08-.69-.23-.91a.675.675 0 00-.58-.32c-.22 0-.45.09-.7.28-.22.2-.54.48-.93.88zM205.24 186.541v-1c.26-.26.53-.51.8-.76.27-.24.57-.51.91-.79.33-.29.68-.56 1.03-.82.35-.26.76-.53 1.21-.81.4.65.6 1.27.6 1.87 0 .33-.06.69-.19 1.09-.12.4-.29.86-.51 1.37-.22.51-.49 1.16-.81 1.93-.87 2.12-1.51 3.88-1.94 5.26-.43 1.38-.64 2.32-.64 2.82 0 .04.03.2.08.48.05.28.08.49.08.62 0 .24-.06.36-.18.38-.12.02-.29-.03-.51-.15-.56-.31-.94-.6-1.13-.88-.19-.28-.29-.63-.29-1.07 0-.79.26-2.02.78-3.68.26-.84.57-1.67.92-2.5.35-.83.74-1.67 1.17-2.52.43-.85.83-1.63 1.21-2.35-.81.36-1.68.87-2.59 1.51zM214.61 183.431c1.26.07 2.23.1 2.9.1.99 0 1.93-.02 2.84-.07-.32.76-.63 1.39-.92 1.89-.29.5-.49.78-.61.84-.19.07-.91.1-2.14.1-1.14 0-1.96-.01-2.45-.02-.82.77-1.48 1.74-1.98 2.91 1.37-.52 2.4-.78 3.08-.78.89 0 1.58.28 2.07.84.5.56.74 1.37.74 2.43 0 1.34-.39 2.54-1.18 3.6a7.945 7.945 0 01-3.01 2.46c-1.22.58-2.46.87-3.73.87-.73 0-1.24-.13-1.54-.38-.3-.25-.46-.71-.46-1.38 0-.38.07-.7.2-.95s.35-.48.66-.7c.75-.54 1.54-.82 2.36-.82.09 0 .13.03.13.1 0 .03-.03.07-.08.1s-.09.05-.09.05c-.93.38-1.4.68-1.4.9 0 .21.31.32.92.32.9 0 1.84-.25 2.82-.75.98-.5 1.8-1.09 2.46-1.78.66-.68 1-1.24 1-1.67 0-.33-.14-.58-.41-.77-.27-.19-.67-.28-1.18-.28-.5 0-.95.05-1.36.14-.41.09-.87.22-1.38.38-.51.16-.83.24-.96.24-.24 0-.41-.12-.5-.35-.09-.2-.17-.39-.26-.58a5.29 5.29 0 01-.21-.6c-.06-.21-.09-.38-.09-.52.44-1.78 1.69-3.73 3.76-5.87z" />
+      </symbol>
+      <symbol id="logo-hoshi-small" width="16" height="16" viewBox="0 0 84 64">
+        <path fill="#ffbf00" d="M77.76 19.09L40.86 2.78c-1.49-.66-3.21-.51-4.57.39L5.53 23.66c-2.08 1.38-2.73 4.14-1.48 6.3l16.88 29.27c.91 1.58 2.63 2.5 4.44 2.38l41.66-2.68c1.99-.12 3.7-1.47 4.25-3.38l9.11-30.78c.67-2.28-.45-4.72-2.63-5.68zm-8.23 6l-12.78 8.97c-1.06.74-1.4 2.14-.81 3.29l5.7 11.18c.24.47-.24.99-.72.78L45.24 42.8c-.8-.33-1.71-.24-2.43.23l-13.75 9.06c-.44.29-1-.11-.88-.6l3.11-13.15c.29-1.19-.3-2.39-1.4-2.92L15.74 28.6c-.53-.26-.38-1.04.2-1.08l17.32-1.55c1.04-.09 1.92-.8 2.23-1.78L40.11 10c.18-.48.83-.54 1.07-.09l6.79 12.77c.45.84 1.33 1.37 2.29 1.37H69.2c.56 0 .79.73.33 1.04z" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <script src="scripts/app.js" async></script>
+
+  <!-- Google Map -->
+  <script src="scripts/map.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVa7jKKQmq0gp_9q15MwRKavdjchkYeM0&callback=initMapAsian"></script>
+</body>
+</html>
