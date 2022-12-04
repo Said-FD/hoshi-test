@@ -1,10 +1,13 @@
-const cacheName = 'cache-v14'
+// TODO: 14
+const cacheName = 'cache-v20'
 
 const staticAssets = [
   '/',
   '/index.html',
   '/asian-cuisine.html',
   '/thai-cuisine.html',
+  '/manifest.json',
+  '/service-worker.js',
   '/styles/base/reset.css',
   '/styles/base/variables.css',
   '/styles/base/global.css',
@@ -17,7 +20,9 @@ const staticAssets = [
   '/styles/style.css',
   '/scripts/app.js',
   '/scripts/map.js',
+  '/favicon.ico',
   '/favicon.svg',
+  '/favicon/favicon-64.png',
   '/favicon/favicon-180.png',
   '/favicon/favicon-192.png',
   '/favicon/favicon-512.png',

@@ -75,6 +75,11 @@ button {
   }
 }
 
+.cuisine-link .link:hover,
+.cuisine-link .link:focus {
+  color: var(--accentColorHover);
+}
+
 .cuisine-link .link-uppercase {
   margin-left: .375rem;
   text-transform: uppercase;
