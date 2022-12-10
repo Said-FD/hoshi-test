@@ -1,6 +1,5 @@
 /* Dishes Styles */
 .dishes-list {
-  display: none;
   row-gap: 24px;
 }
 
@@ -29,6 +28,25 @@
 @media (min-width: 600px) and (max-width: 859px) {
   .dishes-list {
     grid-template-columns: minmax(220px, 320px);
+  }
+}
+
+@media (min-width: 600px) {
+  .dishes-list {
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    display: grid;
+    justify-content: start;
+    height: 0;
+    transition: opacity .35s ease-in-out;
+  }
+
+  .dishes-list.is-active {
+    overflow: visible;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
   }
 }
 
