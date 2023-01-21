@@ -14,11 +14,16 @@
   <link rel="apple-touch-icon" href="favicon/favicon-180.png"><!-- 180×180 -->
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#ffbf00">
+  <meta name="view-transition" content="same-origin">
 </head>
 <body class="body">
   <main class="main">
     <div class="cards-container">
-      <a href="asian-cuisine.html" class="card">
+      <a
+        href="asian-cuisine.html"
+        class="card"
+        style="view-transition-name: asian; contain: layout"
+      >
         <span>5401 Collins Ave, Miami Beach, FL</span>
         <svg width="202" height="108">
           <use href="#logo-hoshi"></use>
@@ -30,7 +35,11 @@
           </svg>
         </span>
       </a>
-      <a href="thai-cuisine.html" class="card">
+      <a
+        href="thai-cuisine.html"
+        class="card"
+        style="view-transition-name: thai; contain: layout"
+      >
         <span>1935 Harrison St, Hollywood, FL</span>
         <svg width="202" height="95">
           <use href="#logo-hoshi-thai"></use>

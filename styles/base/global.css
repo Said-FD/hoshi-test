@@ -1,4 +1,8 @@
 /* Global Styles */
+html {
+  background-color: var(--mainBgColor, #fff);
+}
+
 body {
   min-width: 320px;
   max-width: 1440px;
@@ -9,7 +13,7 @@ body {
   font-size: 16px;
   line-height: 1.375;
   color: var(--mainTextColor, #333);
-  background-color: var(--mainBgColor, #fff);
+  background-color: inherit;
 }
 
 @media (min-width: 1280px) {
@@ -141,5 +145,10 @@ button {
     pointer-events: none;
     flex-shrink: 0;
   }
+}
+
+::view-transition-group(thai),
+::view-transition-group(asian) {
+  animation-duration: .5s;
 }
 /* END Global Styles */
