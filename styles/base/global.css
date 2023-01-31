@@ -81,7 +81,7 @@ button {
 }
 
 .cuisine-link .link {
-  gap: 16px;
+  gap: 1rem;
 }
 
 .cuisine-link .link:hover,
@@ -89,26 +89,26 @@ button {
   color: var(--accentColorHover);
 }
 
-.cuisine-link .link-uppercase {
-  margin-left: .375rem;
-  text-transform: uppercase;
-}
-
 @media (min-width: 992px) {
-  .body-asian .cuisine-link .link svg {
+  .body-asian .cuisine-link svg {
     order: -1;
     transform: rotate(180deg);
   }
 }
 
 @media (max-width: 991px) {
-  .body-asian .cuisine-link .link svg {
+  .body-asian .cuisine-link svg {
     transform: rotate(-90deg);
   }
 
-  .body-thai .cuisine-link .link svg {
+  .body-thai .cuisine-link svg {
     transform: rotate(90deg);
   }
+}
+
+.cuisine-link .link-uppercase {
+  margin-left: .375rem;
+  text-transform: uppercase;
 }
 
 .action-button {
@@ -207,25 +207,25 @@ button {
     to { transform: translateX(100%); }
   }
 
-  ::view-transition-old(body-asian) {
+  ::view-transition-old(body-asian):only-child {
     animation:
       .45s cubic-bezier(0.4, 0, 1, 1) both fade-out,
       .5s cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
   }
 
-  ::view-transition-new(body-asian) {
+  ::view-transition-new(body-asian):only-child {
     animation:
       .25s cubic-bezier(0, 0, 0.2, 1) both fade-in,
       .5s cubic-bezier(0.4, 0, 0.2, 1) both slide-from-left;
   }
 
-  ::view-transition-old(body-thai) {
+  ::view-transition-old(body-thai):only-child {
     animation:
       .45s cubic-bezier(0.4, 0, 1, 1) both fade-out,
       .5s cubic-bezier(0.4, 0, 0.2, 1) both slide-to-right;
   }
 
-  ::view-transition-new(body-thai) {
+  ::view-transition-new(body-thai):only-child {
     animation:
       .25s cubic-bezier(0, 0, 0.2, 1) both fade-in,
       .5s cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
@@ -249,25 +249,25 @@ button {
     to { transform: translateY(100%); }
   }
 
-  ::view-transition-old(body-asian) {
+  ::view-transition-old(body-asian):only-child {
     animation:
       .45s cubic-bezier(0.4, 0, 1, 1) both fade-out,
       .5s cubic-bezier(0.4, 0, 0.2, 1) both slide-to-top;
   }
 
-  ::view-transition-new(body-asian) {
+  ::view-transition-new(body-asian):only-child {
     animation:
       .25s cubic-bezier(0, 0, 0.2, 1) both fade-in,
       .5s cubic-bezier(0.4, 0, 0.2, 1) both slide-from-top;
   }
 
-  ::view-transition-old(body-thai) {
+  ::view-transition-old(body-thai):only-child {
     animation:
       .45s cubic-bezier(0.4, 0, 1, 1) both fade-out,
       .5s cubic-bezier(0.4, 0, 0.2, 1) both slide-to-bottom;
   }
 
-  ::view-transition-new(body-thai) {
+  ::view-transition-new(body-thai):only-child {
     animation:
       .25s cubic-bezier(0, 0, 0.2, 1) both fade-in,
       .5s cubic-bezier(0.4, 0, 0.2, 1) both slide-from-bottom;
