@@ -4,6 +4,7 @@ html {
 }
 
 body {
+  contain: layout;
   min-width: 320px;
   max-width: 1440px;
   min-height: 100vh;
@@ -79,6 +80,10 @@ button {
   }
 }
 
+.cuisine-link .link {
+  gap: 16px;
+}
+
 .cuisine-link .link:hover,
 .cuisine-link .link:focus {
   color: var(--accentColorHover);
@@ -89,8 +94,21 @@ button {
   text-transform: uppercase;
 }
 
-.cuisine-link svg {
-  margin-left: 16px;
+@media (min-width: 992px) {
+  .body-asian .cuisine-link .link svg {
+    order: -1;
+    transform: rotate(180deg);
+  }
+}
+
+@media (max-width: 991px) {
+  .body-asian .cuisine-link .link svg {
+    transform: rotate(-90deg);
+  }
+
+  .body-thai .cuisine-link .link svg {
+    transform: rotate(90deg);
+  }
 }
 
 .action-button {
@@ -147,9 +165,113 @@ button {
   }
 }
 
-::view-transition-group(thai),
-::view-transition-group(asian),
-::view-transition-group(main) {
-  animation-duration: .5s;
+/* View Transition Styles */
+.body-index {
+  view-transition-name: body-index;
 }
+
+.body-asian {
+  view-transition-name: body-asian;
+}
+
+.body-thai {
+  view-transition-name: body-thai;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+}
+
+@keyframes fade-out {
+  to { opacity: 0; }
+}
+
+::view-transition-new(body-index) {
+  animation: .75s ease-out .25s both fade-in;
+}
+
+@media (min-width: 992px) {
+  @keyframes slide-from-left {
+    from { transform: translateX(-100%); }
+  }
+
+  @keyframes slide-to-left {
+    to { transform: translateX(-100%); }
+  }
+
+  @keyframes slide-from-right {
+    from { transform: translateX(100%); }
+  }
+
+  @keyframes slide-to-right {
+    to { transform: translateX(100%); }
+  }
+
+  ::view-transition-old(body-asian) {
+    animation:
+      .45s cubic-bezier(0.4, 0, 1, 1) both fade-out,
+      .5s cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
+  }
+
+  ::view-transition-new(body-asian) {
+    animation:
+      .25s cubic-bezier(0, 0, 0.2, 1) both fade-in,
+      .5s cubic-bezier(0.4, 0, 0.2, 1) both slide-from-left;
+  }
+
+  ::view-transition-old(body-thai) {
+    animation:
+      .45s cubic-bezier(0.4, 0, 1, 1) both fade-out,
+      .5s cubic-bezier(0.4, 0, 0.2, 1) both slide-to-right;
+  }
+
+  ::view-transition-new(body-thai) {
+    animation:
+      .25s cubic-bezier(0, 0, 0.2, 1) both fade-in,
+      .5s cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
+  }
+}
+
+@media (max-width: 991px) {
+  @keyframes slide-from-top {
+    from { transform: translateY(-100%); }
+  }
+
+  @keyframes slide-to-top {
+    to { transform: translateY(-100%); }
+  }
+
+  @keyframes slide-from-bottom {
+    from { transform: translateY(100%); }
+  }
+
+  @keyframes slide-to-bottom {
+    to { transform: translateY(100%); }
+  }
+
+  ::view-transition-old(body-asian) {
+    animation:
+      .45s cubic-bezier(0.4, 0, 1, 1) both fade-out,
+      .5s cubic-bezier(0.4, 0, 0.2, 1) both slide-to-top;
+  }
+
+  ::view-transition-new(body-asian) {
+    animation:
+      .25s cubic-bezier(0, 0, 0.2, 1) both fade-in,
+      .5s cubic-bezier(0.4, 0, 0.2, 1) both slide-from-top;
+  }
+
+  ::view-transition-old(body-thai) {
+    animation:
+      .45s cubic-bezier(0.4, 0, 1, 1) both fade-out,
+      .5s cubic-bezier(0.4, 0, 0.2, 1) both slide-to-bottom;
+  }
+
+  ::view-transition-new(body-thai) {
+    animation:
+      .25s cubic-bezier(0, 0, 0.2, 1) both fade-in,
+      .5s cubic-bezier(0.4, 0, 0.2, 1) both slide-from-bottom;
+  }
+}
+/* END View Transition Styles */
 /* END Global Styles */

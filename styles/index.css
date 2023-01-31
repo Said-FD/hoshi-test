@@ -2,6 +2,7 @@
 @import 'base/variables.css';
 @import 'base/global.css';
 
+/* Index Page Styles */
 body.body {
   padding: 0;
 }
@@ -65,3 +66,24 @@ body.body {
   gap: 16px;
   flex-shrink: 0;
 }
+
+@media (min-width: 992px) {
+  .card-name-asian svg {
+    order: -1;
+  }
+
+  .card-name-thai svg {
+    transform: rotate(-180deg);
+  }
+}
+
+@media (max-width: 991px) {
+  .card-name-asian svg {
+    transform: rotate(90deg);
+  }
+
+  .card-name-thai svg {
+    transform: rotate(-90deg);
+  }
+}
+/* END Index Page Styles */
