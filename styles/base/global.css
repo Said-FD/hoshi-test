@@ -148,7 +148,8 @@ button {
 }
 
 ::view-transition-group(thai),
-::view-transition-group(asian) {
+::view-transition-group(asian),
+::view-transition-group(main) {
   animation-duration: .5s;
 }
 /* END Global Styles */

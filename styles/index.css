@@ -2,16 +2,8 @@
 @import 'base/variables.css';
 @import 'base/global.css';
 
-@media (min-width: 1280px) {
-  .body {
-    padding: 0;
-  }
-}
-
-@media (max-width: 1279px) {
-  .body {
-    padding: 0;
-  }
+body.body {
+  padding: 0;
 }
 
 .main {
